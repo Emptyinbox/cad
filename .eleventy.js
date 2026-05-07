@@ -2,8 +2,13 @@
 // Output: _site/ — published verbatim to GitHub Pages.
 
 const { DateTime } = require("luxon");
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 module.exports = function (eleventyConfig) {
+  // Auto-rewrites every internal href/src to respect pathPrefix.
+  // Lets us serve at /cad/ on github.io staging and at / on the custom domain.
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+
   // Pass through static assets (images, css, js, robots, CNAME)
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/robots.txt": "robots.txt" });
@@ -67,6 +72,8 @@ module.exports = function (eleventyConfig) {
     templateFormats: ["md", "njk", "html"],
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
-    pathPrefix: "/",
+    // PATH_PREFIX env var lets the GitHub Action build the staging version at /cad/
+    // while local dev and production custom-domain builds use /.
+    pathPrefix: process.env.PATH_PREFIX || "/",
   };
 };

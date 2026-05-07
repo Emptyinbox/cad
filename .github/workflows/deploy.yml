@@ -31,7 +31,10 @@ jobs:
         run: npm ci
 
       - name: Build site with Eleventy
-        run: npx @11ty/eleventy
+        env:
+          # Staging at GitHub Pages serves under /cad/; custom-domain build will set this to /
+          PATH_PREFIX: /cad/
+        run: npx @11ty/eleventy --pathprefix=/cad/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
