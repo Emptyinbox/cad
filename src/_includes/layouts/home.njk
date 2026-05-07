@@ -47,12 +47,34 @@ layout: layouts/base.njk
 
 {% include "partials/services-grid.njk" %}
 
+{% include "partials/why-us.njk" %}
+
+{% include "partials/testimonials.njk" %}
+
+<section class="section section--sand">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-head__eyebrow">{{ icon("briefcase", 14) }} Industries we know</span>
+      <h2>We speak your <span class="accent-italic">business.</span></h2>
+      <p>From accounting firms to construction sites — we tailor the toolkit to how you actually work.</p>
+    </div>
+    <div class="grid grid--4">
+      {% for ind in industries %}
+      <a href="/industries/{{ ind.slug }}/" class="card">
+        <div class="card__icon">{{ icon(ind.icon, 28) }}</div>
+        <h3 style="font-size:1.05rem;margin-bottom:0;">{{ ind.title }}</h3>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 <section class="section section--paper">
   <div class="container">
     <div class="section-head">
       <span class="section-head__eyebrow">{{ icon("pin", 14) }} Where we work</span>
-      <h2>Onsite + remote across <span class="accent-italic">BC and Alberta</span></h2>
-      <p>Our techs are spread across the lower mainland and beyond, so help is rarely far away.</p>
+      <h2>Onsite + remote across <span class="accent-italic">BC and Alberta.</span></h2>
+      <p>Techs spread across the lower mainland and beyond, so help is rarely far.</p>
     </div>
     <ul class="chips" style="justify-content:center;">
       {% for province, info in locations | dictsort %}
@@ -64,26 +86,6 @@ layout: layouts/base.njk
   </div>
 </section>
 
-<section class="section section--cream">
-  <div class="container">
-    <div class="section-head">
-      <span class="section-head__eyebrow">{{ icon("briefcase", 14) }} Industries we know</span>
-      <h2>We speak your business.</h2>
-      <p>From accounting firms to construction sites, we tailor the toolkit to how you actually work.</p>
-    </div>
-    <div class="grid grid--4">
-      {% for ind in industries %}
-      <a href="/industries/{{ ind.slug }}/" class="card">
-        <div class="card__icon">{{ icon(ind.icon, 30) }}</div>
-        <h3 style="font-size:1.1rem;">{{ ind.title }}</h3>
-      </a>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<div class="prose">
-  {{ content | safe }}
-</div>
+{% include "partials/faq.njk" %}
 
 {% include "partials/cta.njk" %}

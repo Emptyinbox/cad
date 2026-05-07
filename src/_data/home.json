@@ -1,0 +1,63 @@
+{
+  "whyUs": [
+    {
+      "icon": "sparkle",
+      "title": "Lightning-fast support",
+      "body": "Real engineers respond in 15 minutes or less. Hit F1 or open the app — our software runs the diagnostic before we even pick up the phone. Saves 10 minutes on every ticket."
+    },
+    {
+      "icon": "chart",
+      "title": "Honest, predictable pricing",
+      "body": "Three tiers, all-inclusive, sized for 10–100 person companies. Customers save an average of 30%. Month-to-month — no commitment, no contracts to escape from."
+    },
+    {
+      "icon": "shield",
+      "title": "Background in white-hat hacking",
+      "body": "Our team's been on the offensive side of cybersecurity. We know how attackers think, which is exactly the experience you want defending your network."
+    },
+    {
+      "icon": "heart-hand",
+      "title": "Real humans, real relationships",
+      "body": "22 engineers and good humans across BC and Alberta. We pick up the phone. We remember your business. We stick around because clients want us to, not because they're locked in."
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "I called Chris and he managed to fit me in the same day, fixing my laptop in just 30 minutes. As an independent financial planner in Whistler, my laptop is crucial for my work. So glad I met Chris and could get back to my craft quickly.",
+      "name": "Independent financial planner",
+      "where": "Whistler"
+    },
+    {
+      "quote": "James the owner was incredibly helpful and knowledgeable. I thought my laptop had melted down and he came in on a holiday Monday to help. It turned out to be a simple battery charging issue but he was incredibly patient and gave me valuable advice about my email system.",
+      "name": "Small business owner",
+      "where": "Vancouver"
+    },
+    {
+      "quote": "We phoned frantically at 11am with internet issues at our store. Chris was onsite within 3 hours and had us back up and running in just over an hour. Knowledgeable, friendly, extremely helpful. We would have been completely lost without them.",
+      "name": "Retail owner",
+      "where": "Lower Mainland"
+    }
+  ],
+  "faq": [
+    {
+      "q": "How quickly can you respond if something breaks?",
+      "a": "We guarantee a 15-minute response on all support tickets, 24/7. The F1-button workflow means our techs already have a diagnostic when they pick up the phone — no time wasted explaining what went wrong."
+    },
+    {
+      "q": "Do I have to sign a long contract?",
+      "a": "No. Our packages are month-to-month with zero commitment. We want clients to stay because they're happy, not because they signed something."
+    },
+    {
+      "q": "What size companies do you typically work with?",
+      "a": "Sweet spot is 10–100 person small businesses across BC and Alberta. We've got 60+ companies and 2,000+ users currently under management."
+    },
+    {
+      "q": "What's actually included in the monthly fee?",
+      "a": "Everything we do for your team — support tickets, monitoring, cybersecurity, backups, Microsoft 365, server admin, onsite visits when needed. One predictable price per employee, no surprise invoices."
+    },
+    {
+      "q": "Do you do onsite visits, or only remote?",
+      "a": "Both. We have offices in Vancouver and Whistler with techs distributed across the lower mainland for fast onsite response. Most issues get resolved remotely in minutes; the rest, we show up."
+    }
+  ]
+}

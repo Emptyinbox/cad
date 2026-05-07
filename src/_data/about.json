@@ -1,0 +1,36 @@
+{
+  "values": [
+    {
+      "icon": "headset",
+      "title": "Pick up the phone",
+      "body": "We answer in 15 minutes or less, day or night. Real engineers, not a ticket queue."
+    },
+    {
+      "icon": "shield",
+      "title": "Stay one step ahead",
+      "body": "Backgrounds in white-hat hacking. We know how attackers think — that's the experience defending you."
+    },
+    {
+      "icon": "heart-hand",
+      "title": "Be good humans",
+      "body": "22 nice guys and gals doing IT well. No jargon, no condescension, no surprise invoices."
+    },
+    {
+      "icon": "pin",
+      "title": "Know the territory",
+      "body": "We're local. Offices in Whistler and Vancouver, techs distributed across the lower mainland for fast onsite."
+    }
+  ],
+  "offices": [
+    {
+      "name": "Vancouver office",
+      "address": "Vancouver, BC",
+      "blurb": "Lower-mainland HQ — most of our engineers and techs work from here."
+    },
+    {
+      "name": "Whistler office",
+      "address": "Whistler, BC",
+      "blurb": "Where it all started in 2013. Onsite support from Squamish to Pemberton."
+    }
+  ]
+}

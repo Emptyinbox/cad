@@ -1,0 +1,20 @@
+{% from "partials/icon.njk" import icon %}
+<section class="section section--paper faq">
+  <div class="container container--narrow">
+    <div class="section-head">
+      <span class="section-head__eyebrow">{{ icon("sparkle", 14) }} Common questions</span>
+      <h2>Things people <span class="accent-italic">always ask.</span></h2>
+    </div>
+    <div class="faq__list">
+      {% for item in home.faq %}
+      <details class="faq__item"{% if loop.first %} open{% endif %}>
+        <summary>
+          <span>{{ item.q }}</span>
+          <span class="faq__plus" aria-hidden="true">{{ icon("chevron-down", 18) }}</span>
+        </summary>
+        <div class="faq__a"><p>{{ item.a }}</p></div>
+      </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,4 +1,47 @@
 ---
-layout: layouts/page.njk
+layout: layouts/base.njk
 ---
-{{ content | safe }}
+{% from "partials/icon.njk" import icon %}
+
+<header class="page-header">
+  <div class="container">
+    <div class="page-header__breadcrumb"><a href="/">Home</a> / Projects</div>
+    <h1>One-time IT projects, <span class="accent-italic">done right.</span></h1>
+    <p class="page-header__lede">{{ description }}</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid--3">
+      <a href="/projects/email-migrations/" class="card">
+        <div class="card__icon">{{ icon("envelope", 32) }}</div>
+        <h3>Email Migrations</h3>
+        <p>Move from Gmail, Exchange, or POP3 to Microsoft 365 without losing a single calendar invite.</p>
+        <span class="card__more">Learn more {{ icon("arrow-right", 16) }}</span>
+      </a>
+      <a href="/projects/cloud-migrations/" class="card">
+        <div class="card__icon">{{ icon("cloud", 32) }}</div>
+        <h3>Cloud Migrations</h3>
+        <p>Lift your file shares, apps, and workloads to Azure or M365 — or out of them, if that's the play.</p>
+        <span class="card__more">Learn more {{ icon("arrow-right", 16) }}</span>
+      </a>
+      <a href="/projects/server-migrations/" class="card">
+        <div class="card__icon">{{ icon("server", 32) }}</div>
+        <h3>Server Migrations</h3>
+        <p>Replace aging servers, consolidate two into one, or move on-prem to cloud — planned and executed.</p>
+        <span class="card__more">Learn more {{ icon("arrow-right", 16) }}</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--cream">
+  <div class="container container--narrow text-center">
+    <h2>Need a different kind of project?</h2>
+    <p style="color: var(--ink-mute); font-size: 1.1rem; margin-bottom: 2rem;">VoIP installs, network redesigns, security audits, hardware refreshes — we've done plenty. Tell us what's on your list.</p>
+    <a href="/contact-us/" class="btn btn--primary btn--lg">Talk to a project manager {{ icon("arrow-right", 16) }}</a>
+  </div>
+</section>
+
+{% include "partials/cta.njk" %}

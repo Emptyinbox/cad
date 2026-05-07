@@ -1,0 +1,21 @@
+{% from "partials/icon.njk" import icon %}
+<section class="section section--cream testimonials">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-head__eyebrow">{{ icon("sparkle", 14) }} What clients say</span>
+      <h2>People who've stopped <span class="accent-italic">fighting their IT.</span></h2>
+    </div>
+    <div class="grid grid--3">
+      {% for t in home.testimonials %}
+      <figure class="quote-card">
+        <div class="quote-card__mark" aria-hidden="true">&ldquo;</div>
+        <blockquote>{{ t.quote }}</blockquote>
+        <figcaption>
+          <strong>{{ t.name }}</strong>
+          <span>{{ t.where }}</span>
+        </figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>

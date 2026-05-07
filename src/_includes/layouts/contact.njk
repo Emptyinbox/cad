@@ -1,0 +1,97 @@
+---
+layout: layouts/base.njk
+---
+{% from "partials/icon.njk" import icon %}
+
+<section class="hero hero--narrow">
+  <div class="container">
+    <div style="max-width: 780px;">
+      <span class="hero__eyebrow">{{ icon("sparkle", 16) }} Talk to a real engineer</span>
+      <h1>Tell us what's <span class="accent-italic">going on.</span></h1>
+      <p class="hero__lede">Phone is fastest — you'll have someone in 15 minutes or less, day or night. Email and the form below also reach a real human, no auto-responder maze. We answer every message ourselves.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper" style="padding-top: 1rem;">
+  <div class="container">
+    <div class="grid grid--3">
+      <a href="tel:{{ site.phonePrimaryHref }}" class="card contact-card">
+        <div class="card__icon">{{ icon("headset", 32) }}</div>
+        <h3>Phone</h3>
+        <p style="font-size: 1.15rem; color: var(--navy); font-weight: 600; margin-bottom: .25rem;">{{ site.phonePrimary }}</p>
+        <p>Fastest response. Real engineer in 15 minutes or less, 24/7.</p>
+        <span class="card__more">Call now {{ icon("arrow-right", 16) }}</span>
+      </a>
+
+      <a href="mailto:{{ site.email }}" class="card contact-card">
+        <div class="card__icon">{{ icon("envelope", 32) }}</div>
+        <h3>Email</h3>
+        <p style="font-size: 1.05rem; color: var(--navy); font-weight: 600; margin-bottom: .25rem; word-break: break-all;">{{ site.email }}</p>
+        <p>Best for non-urgent questions and quote requests. Response within a business day.</p>
+        <span class="card__more">Send email {{ icon("arrow-right", 16) }}</span>
+      </a>
+
+      <a href="tel:{{ site.phoneSalesHref }}" class="card contact-card">
+        <div class="card__icon" style="background: linear-gradient(135deg, var(--navy), var(--navy-soft)); color: #fff;">{{ icon("briefcase", 32) }}</div>
+        <h3>Sales</h3>
+        <p style="font-size: 1.15rem; color: var(--navy); font-weight: 600; margin-bottom: .25rem;">{{ site.phoneSales }}</p>
+        <p>Quotes, new contracts, switching from another provider. We'll match or beat your current rate.</p>
+        <span class="card__more">Call sales {{ icon("arrow-right", 16) }}</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--cream">
+  <div class="container container--narrow">
+    <div class="section-head">
+      <span class="section-head__eyebrow">{{ icon("check", 14) }} What happens next</span>
+      <h2>From "first call" to <span class="accent-italic">"problem solved."</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step__num">1</div>
+        <div>
+          <h3>You call or email</h3>
+          <p>You reach a real person, not a triage bot. We figure out what's actually going on in plain English.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__num">2</div>
+        <div>
+          <h3>We diagnose</h3>
+          <p>Either remotely (most cases) or onsite if your hardware needs attention. Usually inside an hour.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__num">3</div>
+        <div>
+          <h3>We fix it &amp; tell you what to watch for</h3>
+          <p>Issue resolved, plus a plain-English summary of what happened and how to prevent it next time.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__num">4</div>
+        <div>
+          <h3>You decide if you want this every day</h3>
+          <p>If so, we offer flat-rate managed support starting from a per-employee price. No commitment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper">
+  <div class="container container--narrow">
+    <div class="contact-form-placeholder">
+      <h2>Or send a message</h2>
+      <p style="color: var(--ink-mute); margin-bottom: 1.5rem;">Tell us about your business and we'll be in touch within one business day.</p>
+      <p style="background: var(--cream-warm); border: 1.5px dashed var(--coral-soft); border-radius: var(--radius); padding: 1.25rem 1.5rem; color: var(--ink-soft); font-size: .95rem;">
+        <strong style="color: var(--navy);">Form coming soon.</strong> In the meantime, the fastest paths are the phone and email cards above.
+      </p>
+    </div>
+  </div>
+</section>
+
+{% include "partials/cta.njk" %}

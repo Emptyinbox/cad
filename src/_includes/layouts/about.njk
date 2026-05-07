@@ -1,0 +1,73 @@
+---
+layout: layouts/base.njk
+---
+{% from "partials/icon.njk" import icon %}
+
+<section class="hero hero--about">
+  <div class="container">
+    <div class="hero__inner">
+      <div>
+        <span class="hero__eyebrow">{{ icon("sparkle", 16) }} Since 2013</span>
+        <h1>22 humans keeping <span class="accent-italic">2,000+ users</span> running smooth.</h1>
+        <p class="hero__lede">Control Alt Delete is a small Canadian IT company looking after almost 60 small businesses across BC and Alberta. Two offices, distributed techs, real engineers, and a soft spot for white-hat hacking.</p>
+        <div class="hero__actions">
+          <a href="/contact-us/" class="btn btn--primary btn--lg">Work with us {{ icon("arrow-right", 16) }}</a>
+          <a href="/locations-served/" class="btn btn--outline btn--lg">See where we work</a>
+        </div>
+      </div>
+      <div class="about-photos">
+        <img src="/assets/img/2024/12/ctrl-alt-delete-office.jpg" alt="Control Alt Delete office" class="about-photos__a">
+        <img src="/assets/img/2024/12/ctrl-alt-delete-support-van.jpg" alt="Control Alt Delete support van" class="about-photos__b">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper">
+  <div class="container container--narrow">
+    <div class="prose" style="padding: 0;">{{ content | safe }}</div>
+  </div>
+</section>
+
+<section class="section section--cream">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-head__eyebrow">{{ icon("heart-hand", 14) }} What we care about</span>
+      <h2>Four things, <span class="accent-italic">non-negotiable.</span></h2>
+    </div>
+    <div class="grid grid--2">
+      {% for v in about.values %}
+      <div class="why-card">
+        <div class="why-card__icon">{{ icon(v.icon, 28) }}</div>
+        <div>
+          <h3>{{ v.title }}</h3>
+          <p>{{ v.body }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-head__eyebrow">{{ icon("pin", 14) }} Where we are</span>
+      <h2>Two offices, <span class="accent-italic">techs everywhere.</span></h2>
+    </div>
+    <div class="grid grid--2">
+      {% for o in about.offices %}
+      <div class="why-card">
+        <div class="why-card__icon" style="background: linear-gradient(135deg, var(--navy), var(--navy-soft));">{{ icon("home", 28) }}</div>
+        <div>
+          <h3>{{ o.name }}</h3>
+          <p style="color: var(--coral-deep); font-weight: 600; margin-bottom: .35rem;">{{ o.address }}</p>
+          <p>{{ o.blurb }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% include "partials/cta.njk" %}
