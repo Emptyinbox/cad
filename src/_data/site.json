@@ -1,0 +1,35 @@
+{
+  "name": "Control Alt Delete",
+  "shortName": "Ctrl Alt Delete",
+  "tagline": "Best IT Company in the Lower Mainland",
+  "description": "Managed IT services for small businesses across British Columbia and Alberta. IT consulting, cybersecurity, data backups, and cloud services.",
+  "url": "https://ctrl-alt-delete.ca",
+  "email": "info@ctrl-alt-delete.ca",
+  "phonePrimary": "(778) 401-3650",
+  "phonePrimaryHref": "+17784013650",
+  "phoneSecondary": "(778) 652-8457",
+  "phoneSecondaryHref": "+17786528457",
+  "phoneSales": "(778) 771-1676",
+  "phoneSalesHref": "+17787711676",
+  "address": {
+    "city": "Vancouver",
+    "region": "BC",
+    "country": "Canada"
+  },
+  "social": {
+    "linkedin": "https://www.linkedin.com/company/controlaltdelete-managed-it-services/",
+    "facebook": "https://www.facebook.com/ctrlaltdeleteitservices/"
+  },
+  "analytics": {
+    "gtmId": "GTM-KRWCN6LR"
+  },
+  "form": {
+    "formspreeEndpoint": "https://formspree.io/f/REPLACE_ME"
+  },
+  "video": {
+    "pitchYouTubeId": "CQzTJhq6Tv4",
+    "ticketYouTubeId": "REPLACE_ME_TICKET"
+  },
+  "founded": 2013,
+  "ogImage": "/assets/img/2024/10/Logo-1200x628-1.jpg"
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {# ---- Google Tag Manager (preserved from WordPress site) ---- #}
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','{{ site.analytics.gtmId }}');</script>
+
+  {%- set _pageTitle = og_title or title -%}
+  <title>{{ _pageTitle }}{% if _pageTitle and not (_pageTitle | lower).includes(site.name | lower) %} - {{ site.name }}{% endif %}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <link rel="canonical" href="{{ site.url }}{{ permalink }}">
+
+  {# ---- Open Graph ---- #}
+  <meta property="og:type" content="{% if category == 'blog-post' %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{{ og_title or title }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:url" content="{{ site.url }}{{ permalink }}">
+  <meta property="og:image" content="{{ site.url }}{{ og_image or site.ogImage }}">
+  <meta property="og:site_name" content="{{ site.name }}">
+
+  {# ---- Twitter ---- #}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ og_title or title }}">
+  <meta name="twitter:description" content="{{ description or site.description }}">
+
+  {# ---- Favicons ---- #}
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/2024/07/cropped-ctrl-alt-delete-logo-icon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/2024/07/cropped-ctrl-alt-delete-logo-icon-192x192.png">
+  <link rel="apple-touch-icon" href="/assets/img/2024/07/cropped-ctrl-alt-delete-logo-icon-180x180.png">
+
+  {# ---- Fonts ---- #}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
+  {# ---- FontAwesome ---- #}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  {# ---- Site CSS ---- #}
+  <link rel="stylesheet" href="/assets/css/site.css">
+
+  {# ---- LocalBusiness JSON-LD ---- #}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "{{ site.name }}",
+    "image": "{{ site.url }}{{ site.ogImage }}",
+    "url": "{{ site.url }}",
+    "telephone": "{{ site.phonePrimaryHref }}",
+    "email": "{{ site.email }}",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "{{ site.address.city }}",
+      "addressRegion": "{{ site.address.region }}",
+      "addressCountry": "{{ site.address.country }}"
+    },
+    "areaServed": ["British Columbia", "Alberta"],
+    "sameAs": [
+      "{{ site.social.linkedin }}",
+      "{{ site.social.facebook }}"
+    ]
+  }
+  </script>
+</head>
+<body class="page page--{{ category or 'default' }}">
+  {# ---- GTM noscript ---- #}
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.analytics.gtmId }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  {% include "partials/header.njk" %}
+
+  <main id="main">
+    {{ content | safe }}
+  </main>
+
+  {% include "partials/footer.njk" %}
+
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>

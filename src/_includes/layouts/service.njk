@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+---
+<header class="page-header">
+  <div class="container">
+    <div class="page-header__breadcrumb"><a href="/">Home</a> / Services / {{ title }}</div>
+    <h1>{{ title }}</h1>
+    {% if description %}<p class="page-header__lede">{{ description }}</p>{% endif %}
+  </div>
+</header>
+<article class="prose">{{ content | safe }}</article>
+{% include "partials/cta.njk" %}

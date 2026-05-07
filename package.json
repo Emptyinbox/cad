@@ -1,0 +1,19 @@
+{
+  "name": "ctrl-alt-delete-site",
+  "version": "1.0.0",
+  "description": "Static site for ctrl-alt-delete.ca — Control Alt Delete IT services. Built with Eleventy.",
+  "private": true,
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve --port=8080",
+    "clean": "rm -rf _site",
+    "check": "npx @11ty/eleventy --dryrun"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-img": "^4.0.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "luxon": "^3.4.4"
+  },
+  "license": "UNLICENSED"
+}

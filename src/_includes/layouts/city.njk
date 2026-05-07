@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+---
+<header class="page-header">
+  <div class="container">
+    <div class="page-header__breadcrumb">
+      <a href="/">Home</a> / <a href="/locations-served/">Locations</a> /
+      <a href="/locations-served/{{ province }}/">{{ province | titleCase }}</a> / {{ title }}
+    </div>
+    <h1>IT Services in {{ title }}</h1>
+    {% if description %}<p class="page-header__lede">{{ description }}</p>{% endif %}
+  </div>
+</header>
+<article class="prose">{{ content | safe }}</article>
+{% include "partials/services-grid.njk" %}
+{% include "partials/cta.njk" %}

@@ -1,0 +1,49 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+
+      <div class="site-footer__col site-footer__brand">
+        <img src="/assets/img/2022/12/ctrl-alt-delete-logo.png" alt="{{ site.name }}" width="200" height="40">
+        <p>{{ site.description }}</p>
+        <div class="site-footer__social">
+          <a href="{{ site.social.linkedin }}" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+          <a href="{{ site.social.facebook }}" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <div class="site-footer__col">
+        <h4>Services</h4>
+        <ul>
+          {% for s in services %}<li><a href="/{{ s.slug }}/">{{ s.title }}</a></li>{% endfor %}
+        </ul>
+      </div>
+
+      <div class="site-footer__col">
+        <h4>Locations</h4>
+        <ul>
+          {% for province, info in locations | dictsort %}
+            {% for city in info.cities %}
+            <li><a href="/locations-served/{{ province }}/{{ city.slug }}/">{{ city.title }}</a></li>
+            {% endfor %}
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="site-footer__col">
+        <h4>Contact</h4>
+        <ul class="site-footer__contact">
+          <li><i class="fas fa-headset"></i> <a href="tel:{{ site.phonePrimaryHref }}">{{ site.phonePrimary }}</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li><i class="fas fa-map-marker-alt"></i> {{ site.address.city }}, {{ site.address.region }}</li>
+        </ul>
+        <a href="/contact-us/" class="btn btn--secondary btn--small">Get a Quote</a>
+      </div>
+
+    </div>
+
+    <div class="site-footer__bottom">
+      <p>&copy; {{ "" | year }} {{ site.name }}. All rights reserved.</p>
+      <p><a href="/privacy-policy/">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>

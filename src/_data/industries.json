@@ -1,0 +1,15 @@
+[
+  { "slug": "accounting",          "title": "Accounting",          "icon": "fas fa-calculator" },
+  { "slug": "architecture",        "title": "Architecture",        "icon": "fas fa-drafting-compass" },
+  { "slug": "construction",        "title": "Construction",        "icon": "fas fa-hard-hat" },
+  { "slug": "education",           "title": "Education",           "icon": "fas fa-graduation-cap" },
+  { "slug": "engineering",         "title": "Engineering",         "icon": "fas fa-cogs" },
+  { "slug": "finance",             "title": "Finance",             "icon": "fas fa-chart-line" },
+  { "slug": "healthcare",          "title": "Healthcare",          "icon": "fas fa-stethoscope" },
+  { "slug": "hospitality",         "title": "Hospitality",         "icon": "fas fa-concierge-bell" },
+  { "slug": "legal",               "title": "Legal",               "icon": "fas fa-balance-scale" },
+  { "slug": "nonprofit",           "title": "Nonprofit",           "icon": "fas fa-hand-holding-heart" },
+  { "slug": "property-management", "title": "Property Management", "icon": "fas fa-building" },
+  { "slug": "real-estate",         "title": "Real Estate",         "icon": "fas fa-home" },
+  { "slug": "tourism",             "title": "Tourism",             "icon": "fas fa-map-marked-alt" }
+]

@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+---
+<header class="page-header">
+  <div class="container"><h1>{{ title }}</h1></div>
+</header>
+<section class="section">
+  <div class="container">
+    <div class="grid grid--2">
+      {% for post in collections.posts %}
+      <a href="{{ post.data.permalink }}" class="card">
+        <h3>{{ post.data.title }}</h3>
+        <p>{{ post.data.description }}</p>
+        <span class="card__more">Read more <i class="fas fa-arrow-right"></i></span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% include "partials/cta.njk" %}

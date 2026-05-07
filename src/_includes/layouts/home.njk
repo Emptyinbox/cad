@@ -1,0 +1,46 @@
+---
+layout: layouts/base.njk
+---
+{# STUB — will be replaced with full home page in Phase 5 #}
+<section class="hero">
+  <div class="container">
+    <div class="hero__inner">
+      <div>
+        <span class="hero__eyebrow">Best IT Company in the Lower Mainland</span>
+        <h1>{{ title }}</h1>
+        <p class="hero__lede">{{ description or site.description }}</p>
+        <div class="hero__actions">
+          <a href="tel:{{ site.phonePrimaryHref }}" class="btn btn--primary btn--lg"><i class="fas fa-headset"></i> {{ site.phonePrimary }}</a>
+          <a href="/contact-us/" class="btn btn--outline btn--lg">Get a quote</a>
+        </div>
+      </div>
+      <div class="hero__media">
+        <iframe src="https://www.youtube.com/embed/{{ site.video.pitchYouTubeId }}" title="{{ site.name }} pitch video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "partials/services-grid.njk" %}
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>Cities we serve</h2>
+      <p>Onsite and remote IT support across British Columbia and Alberta.</p>
+    </div>
+    <ul class="chips">
+      {% for province, info in locations | dictsort %}
+        {% for city in info.cities %}
+        <li><a href="/locations-served/{{ province }}/{{ city.slug }}/"><i class="fas fa-map-marker-alt"></i> {{ city.title }}</a></li>
+        {% endfor %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<div class="prose">
+  {{ content | safe }}
+</div>
+
+{% include "partials/cta.njk" %}

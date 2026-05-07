@@ -1,0 +1,22 @@
+{
+  "british-columbia": {
+    "title": "British Columbia",
+    "cities": [
+      { "slug": "abbotsford",  "title": "Abbotsford" },
+      { "slug": "burnaby",     "title": "Burnaby" },
+      { "slug": "chilliwack",  "title": "Chilliwack" },
+      { "slug": "kamloops",    "title": "Kamloops" },
+      { "slug": "kelowna",     "title": "Kelowna" },
+      { "slug": "surrey",      "title": "Surrey" },
+      { "slug": "vancouver",   "title": "Vancouver" },
+      { "slug": "victoria",    "title": "Victoria" },
+      { "slug": "whistler",    "title": "Whistler" }
+    ]
+  },
+  "alberta": {
+    "title": "Alberta",
+    "cities": [
+      { "slug": "calgary",     "title": "Calgary" }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+<section class="services-grid">
+  <div class="container">
+    <div class="section-head">
+      <h2>What we do</h2>
+      <p>Eight services. One flat monthly fee per employee. Real engineers in your timezone.</p>
+    </div>
+    <div class="grid grid--3">
+      {% for s in services %}
+      <a href="/{{ s.slug }}/" class="card card--service">
+        <div class="card__icon"><i class="{{ s.icon }}"></i></div>
+        <h3>{{ s.title }}</h3>
+        <p>{{ s.blurb }}</p>
+        <span class="card__more">Learn more <i class="fas fa-arrow-right"></i></span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

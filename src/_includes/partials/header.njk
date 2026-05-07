@@ -1,0 +1,64 @@
+<header class="site-header" id="top">
+  <div class="container site-header__inner">
+    <a href="/" class="site-header__logo" aria-label="{{ site.name }} home">
+      <img src="/assets/img/2022/12/ctrl-alt-delete-logo.png" alt="{{ site.name }}" width="220" height="44">
+    </a>
+
+    <button class="site-header__toggle" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" aria-label="Primary">
+      <ul class="site-nav__list">
+        <li><a href="/about/">About</a></li>
+
+        <li class="site-nav__has-children">
+          <a href="#" aria-haspopup="true">Services <i class="fas fa-chevron-down"></i></a>
+          <ul class="site-nav__sub">
+            {% for s in services %}
+            <li><a href="/{{ s.slug }}/"><i class="{{ s.icon }}"></i> {{ s.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+
+        <li class="site-nav__has-children">
+          <a href="/industries/" aria-haspopup="true">Industries <i class="fas fa-chevron-down"></i></a>
+          <ul class="site-nav__sub site-nav__sub--columns">
+            {% for ind in industries %}
+            <li><a href="/industries/{{ ind.slug }}/"><i class="{{ ind.icon }}"></i> {{ ind.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+
+        <li class="site-nav__has-children">
+          <a href="/locations-served/" aria-haspopup="true">Locations <i class="fas fa-chevron-down"></i></a>
+          <ul class="site-nav__sub">
+            {% for province, info in locations | dictsort %}
+              {% for city in info.cities %}
+              <li><a href="/locations-served/{{ province }}/{{ city.slug }}/"><i class="fas fa-map-marker-alt"></i> {{ city.title }}</a></li>
+              {% endfor %}
+            {% endfor %}
+          </ul>
+        </li>
+
+        <li class="site-nav__has-children">
+          <a href="/projects/" aria-haspopup="true">Projects <i class="fas fa-chevron-down"></i></a>
+          <ul class="site-nav__sub">
+            <li><a href="/projects/email-migrations/"><i class="fas fa-envelope"></i> Email Migrations</a></li>
+            <li><a href="/projects/cloud-migrations/"><i class="fas fa-cloud"></i> Cloud Migrations</a></li>
+            <li><a href="/projects/server-migrations/"><i class="fas fa-server"></i> Server Migrations</a></li>
+          </ul>
+        </li>
+
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/contact-us/">Contact</a></li>
+      </ul>
+
+      <div class="site-nav__cta">
+        <a href="tel:{{ site.phonePrimaryHref }}" class="btn btn--primary">
+          <i class="fas fa-headset"></i> {{ site.phonePrimary }}
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>

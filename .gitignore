@@ -1,0 +1,8 @@
+node_modules/
+_site/
+.DS_Store
+*.log
+.env
+.cache/
+# Skipped video binaries (host on YouTube)
+src/assets/img/2024/07/*.mp4

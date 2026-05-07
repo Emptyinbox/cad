@@ -1,0 +1,69 @@
+# Extraction report
+
+- WP XML source: `controlaltdeleteca.WordPress.2026-05-07.xml`
+- Items written: **46**
+- Form submissions exported to leads CSV: **127**
+- Distinct wp-content media references found: **50**
+- Skipped (status != publish): 71
+
+## By category
+- blog-index: 1
+- blog-post: 2
+- city: 10
+- home: 1
+- industry: 13
+- industry-index: 1
+- locations-index: 1
+- page: 3
+- project: 3
+- project-index: 1
+- province: 2
+- service: 8
+
+## Files written
+- `/` [home] → `src/index.md`
+- `/about/` [page] → `src/about.md`
+- `/blog/` [blog-index] → `src/blog/index.md`
+- `/blog/10-signs-your-business-has-outgrown-your-current-it-setup/` [blog-post] → `src/blog/posts/10-signs-your-business-has-outgrown-your-current-it-setup.md`
+- `/blog/how-to-secure-your-small-business-from-cyber-threats/` [blog-post] → `src/blog/posts/how-to-secure-your-small-business-from-cyber-threats.md`
+- `/cloud-computing-services/` [service] → `src/services/cloud-computing-services.md`
+- `/computer-support/` [service] → `src/services/computer-support.md`
+- `/contact-us/` [page] → `src/contact-us.md`
+- `/industries/` [industry-index] → `src/industries/index.md`
+- `/industries/accounting/` [industry] → `src/industries/accounting.md`
+- `/industries/architecture/` [industry] → `src/industries/architecture.md`
+- `/industries/construction/` [industry] → `src/industries/construction.md`
+- `/industries/education/` [industry] → `src/industries/education.md`
+- `/industries/engineering/` [industry] → `src/industries/engineering.md`
+- `/industries/finance/` [industry] → `src/industries/finance.md`
+- `/industries/healthcare/` [industry] → `src/industries/healthcare.md`
+- `/industries/hospitality/` [industry] → `src/industries/hospitality.md`
+- `/industries/legal/` [industry] → `src/industries/legal.md`
+- `/industries/nonprofit/` [industry] → `src/industries/nonprofit.md`
+- `/industries/property-management/` [industry] → `src/industries/property-management.md`
+- `/industries/real-estate/` [industry] → `src/industries/real-estate.md`
+- `/industries/tourism/` [industry] → `src/industries/tourism.md`
+- `/it-consulting/` [service] → `src/services/it-consulting.md`
+- `/locations-served/` [locations-index] → `src/locations-served/index.md`
+- `/locations-served/alberta/` [province] → `src/locations-served/alberta/index.md`
+- `/locations-served/alberta/calgary/` [city] → `src/locations-served/alberta/calgary.md`
+- `/locations-served/british-columbia/` [province] → `src/locations-served/british-columbia/index.md`
+- `/locations-served/british-columbia/abbotsford/` [city] → `src/locations-served/british-columbia/abbotsford.md`
+- `/locations-served/british-columbia/burnaby/` [city] → `src/locations-served/british-columbia/burnaby.md`
+- `/locations-served/british-columbia/chilliwack/` [city] → `src/locations-served/british-columbia/chilliwack.md`
+- `/locations-served/british-columbia/kamloops/` [city] → `src/locations-served/british-columbia/kamloops.md`
+- `/locations-served/british-columbia/kelowna/` [city] → `src/locations-served/british-columbia/kelowna.md`
+- `/locations-served/british-columbia/surrey/` [city] → `src/locations-served/british-columbia/surrey.md`
+- `/locations-served/british-columbia/vancouver/` [city] → `src/locations-served/british-columbia/vancouver.md`
+- `/locations-served/british-columbia/victoria/` [city] → `src/locations-served/british-columbia/victoria.md`
+- `/locations-served/british-columbia/whistler/` [city] → `src/locations-served/british-columbia/whistler.md`
+- `/managed-cybersecurity/` [service] → `src/services/managed-cybersecurity.md`
+- `/managed-data-backups/` [service] → `src/services/managed-data-backups.md`
+- `/managed-it-support/` [service] → `src/services/managed-it-support.md`
+- `/network-support/` [service] → `src/services/network-support.md`
+- `/privacy-policy/` [page] → `src/privacy-policy.md`
+- `/projects/` [project-index] → `src/projects/index.md`
+- `/projects/cloud-migrations/` [project] → `src/projects/cloud-migrations.md`
+- `/projects/email-migrations/` [project] → `src/projects/email-migrations.md`
+- `/projects/server-migrations/` [project] → `src/projects/server-migrations.md`
+- `/server-support/` [service] → `src/services/server-support.md`
