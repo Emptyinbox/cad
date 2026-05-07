@@ -1,0 +1,104 @@
+{# Custom SVG icon set — usage: {% from "partials/icon.njk" import icon %} {{ icon("shield") }} #}
+{% macro icon(name, size="24", className="") %}
+{%- set s = size -%}
+{%- set viewBox = "0 0 24 24" -%}
+<svg xmlns="http://www.w3.org/2000/svg" width="{{ s }}" height="{{ s }}" viewBox="{{ viewBox }}" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="icon icon--{{ name }} {{ className }}" aria-hidden="true">
+{%- if name == "headset" -%}
+  <path d="M3 14v-3a9 9 0 0 1 18 0v3"/><path d="M21 19a2 2 0 0 1-2 2h-1v-7h3v5z"/><path d="M3 19a2 2 0 0 0 2 2h1v-7H3v5z"/>
+{%- elif name == "shield" -%}
+  <path d="M12 2 4 5v6c0 5 3.5 9 8 11 4.5-2 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/>
+{%- elif name == "database" -%}
+  <ellipse cx="12" cy="5" rx="8" ry="2.5"/><path d="M4 5v6c0 1.4 3.6 2.5 8 2.5s8-1.1 8-2.5V5"/><path d="M4 11v6c0 1.4 3.6 2.5 8 2.5s8-1.1 8-2.5v-6"/>
+{%- elif name == "briefcase" -%}
+  <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M2 13h20"/>
+{%- elif name == "laptop" -%}
+  <rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/><path d="M9 16h6"/>
+{%- elif name == "network" -%}
+  <circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v4"/><path d="m12 11-5 6"/><path d="m12 11 5 6"/>
+{%- elif name == "server" -%}
+  <rect x="3" y="3" width="18" height="7" rx="1.5"/><rect x="3" y="14" width="18" height="7" rx="1.5"/><circle cx="7" cy="6.5" r=".75" fill="currentColor"/><circle cx="7" cy="17.5" r=".75" fill="currentColor"/>
+{%- elif name == "cloud" -%}
+  <path d="M17.5 19a4.5 4.5 0 0 0 .5-8.96A6 6 0 0 0 6.06 12.5 4 4 0 0 0 7 19h10.5z"/>
+{%- elif name == "envelope" -%}
+  <rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>
+{%- elif name == "phone" -%}
+  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/>
+{%- elif name == "pin" -%}
+  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="2.5"/>
+{%- elif name == "arrow-right" -%}
+  <path d="M5 12h14"/><path d="m13 5 7 7-7 7"/>
+{%- elif name == "chevron-down" -%}
+  <path d="m6 9 6 6 6-6"/>
+{%- elif name == "check" -%}
+  <path d="M5 12.5 10 17 19 7"/>
+{%- elif name == "sparkle" -%}
+  <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/>
+{%- elif name == "linkedin" -%}
+  <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 11v5"/><path d="M8 8v.01"/><path d="M12 16v-5"/><path d="M12 13a2 2 0 0 1 4 0v3"/>
+{%- elif name == "facebook" -%}
+  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+{%- elif name == "menu" -%}
+  <path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/>
+{%- elif name == "close" -%}
+  <path d="M6 6 18 18"/><path d="M18 6 6 18"/>
+{%- elif name == "calculator" -%}
+  <rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6"/><circle cx="9" cy="11" r=".5" fill="currentColor"/><circle cx="12" cy="11" r=".5" fill="currentColor"/><circle cx="15" cy="11" r=".5" fill="currentColor"/><circle cx="9" cy="14.5" r=".5" fill="currentColor"/><circle cx="12" cy="14.5" r=".5" fill="currentColor"/><path d="M14.5 14.5h2"/><path d="M9 17.5h6"/>
+{%- elif name == "compass" -%}
+  <circle cx="12" cy="12" r="9"/><path d="m9 15 1.5-4.5L15 9l-1.5 4.5L9 15z"/>
+{%- elif name == "hard-hat" -%}
+  <path d="M3 17h18"/><path d="M5 17v-2a7 7 0 0 1 14 0v2"/><path d="M9 11V8a3 3 0 0 1 6 0v3"/>
+{%- elif name == "graduation" -%}
+  <path d="M2 9 12 4l10 5-10 5L2 9z"/><path d="M6 11v5a4 4 0 0 0 4 2h4a4 4 0 0 0 4-2v-5"/>
+{%- elif name == "gears" -%}
+  <circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.06-1l2.06-1.5-2-3.5-2.4 1a7 7 0 0 0-1.7-1l-.4-2.5h-4l-.4 2.5a7 7 0 0 0-1.7 1l-2.4-1-2 3.5L5.06 11A7 7 0 0 0 5 12c0 .34.02.67.06 1l-2.06 1.5 2 3.5 2.4-1a7 7 0 0 0 1.7 1l.4 2.5h4l.4-2.5a7 7 0 0 0 1.7-1l2.4 1 2-3.5L18.94 13c.04-.33.06-.66.06-1z"/>
+{%- elif name == "chart" -%}
+  <path d="M3 3v18h18"/><path d="m7 14 3-3 3 3 5-5"/>
+{%- elif name == "stethoscope" -%}
+  <path d="M5 3v6a4 4 0 0 0 8 0V3"/><path d="M5 3h2"/><path d="M11 3h2"/><path d="M9 13v3a4 4 0 0 0 8 0v-2"/><circle cx="17" cy="13" r="2"/>
+{%- elif name == "concierge" -%}
+  <path d="M3 19h18"/><path d="M5 19v-3a7 7 0 0 1 14 0v3"/><path d="M12 9V6"/><circle cx="12" cy="5" r="1.5"/>
+{%- elif name == "scales" -%}
+  <path d="M12 3v18"/><path d="M5 21h14"/><path d="m6 9-3 6h6L6 9z"/><path d="m18 9-3 6h6l-3-6z"/><path d="M5 6h14"/>
+{%- elif name == "heart-hand" -%}
+  <path d="M12 21s-7-4.5-7-10a4.5 4.5 0 0 1 8-3 4.5 4.5 0 0 1 8 3c0 5.5-7 10-7 10h-2z"/>
+{%- elif name == "building" -%}
+  <rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 8h.01"/><path d="M15 8h.01"/><path d="M9 12h.01"/><path d="M15 12h.01"/><path d="M9 16h6"/>
+{%- elif name == "home" -%}
+  <path d="M3 12 12 4l9 8"/><path d="M5 11v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9"/>
+{%- elif name == "map" -%}
+  <path d="m3 7 6-3 6 3 6-3v13l-6 3-6-3-6 3V7z"/><path d="M9 4v13"/><path d="M15 7v13"/>
+{%- else -%}
+  {# fallback: question mark circle #}
+  <circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3 3.5"/><path d="M12 17v.01"/>
+{%- endif -%}
+</svg>
+{% endmacro %}
+
+{# Decorative inline SVGs for warm-tech flourishes #}
+{% macro squiggle(width="120", color="currentColor") %}
+<svg xmlns="http://www.w3.org/2000/svg" width="{{ width }}" height="12" viewBox="0 0 120 12" fill="none" stroke="{{ color }}" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+  <path d="M2 6c5-5 10 5 15 0s10 5 15 0 10 5 15 0 10 5 15 0 10 5 15 0 10 5 15 0 10 5 13 0"/>
+</svg>
+{% endmacro %}
+
+{% macro underline(width="180", color="currentColor") %}
+<svg xmlns="http://www.w3.org/2000/svg" width="{{ width }}" height="14" viewBox="0 0 180 14" fill="none" aria-hidden="true">
+  <path d="M3 9c30-6 70-7 100-3s50 5 75 1" stroke="{{ color }}" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+</svg>
+{% endmacro %}
+
+{% macro dots() %}
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="currentColor" aria-hidden="true" class="dots">
+  <circle cx="6" cy="6" r="2"/><circle cx="22" cy="6" r="2"/><circle cx="38" cy="6" r="2"/><circle cx="54" cy="6" r="2"/><circle cx="70" cy="6" r="2"/>
+  <circle cx="6" cy="22" r="2"/><circle cx="22" cy="22" r="2"/><circle cx="38" cy="22" r="2"/><circle cx="54" cy="22" r="2"/><circle cx="70" cy="22" r="2"/>
+  <circle cx="6" cy="38" r="2"/><circle cx="22" cy="38" r="2"/><circle cx="38" cy="38" r="2"/><circle cx="54" cy="38" r="2"/><circle cx="70" cy="38" r="2"/>
+  <circle cx="6" cy="54" r="2"/><circle cx="22" cy="54" r="2"/><circle cx="38" cy="54" r="2"/><circle cx="54" cy="54" r="2"/><circle cx="70" cy="54" r="2"/>
+  <circle cx="6" cy="70" r="2"/><circle cx="22" cy="70" r="2"/><circle cx="38" cy="70" r="2"/><circle cx="54" cy="70" r="2"/><circle cx="70" cy="70" r="2"/>
+</svg>
+{% endmacro %}
+
+{% macro starburst(size="40", color="currentColor") %}
+<svg xmlns="http://www.w3.org/2000/svg" width="{{ size }}" height="{{ size }}" viewBox="0 0 40 40" fill="none" stroke="{{ color }}" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+  <path d="M20 4v8M20 28v8M4 20h8M28 20h8M8.5 8.5l5.5 5.5M26 26l5.5 5.5M8.5 31.5 14 26M26 14l5.5-5.5"/>
+</svg>
+{% endmacro %}

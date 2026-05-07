@@ -1,16 +1,18 @@
+{% from "partials/icon.njk" import icon %}
 <section class="services-grid">
   <div class="container">
     <div class="section-head">
-      <h2>What we do</h2>
-      <p>Eight services. One flat monthly fee per employee. Real engineers in your timezone.</p>
+      <span class="section-head__eyebrow">{{ icon("sparkle", 14) }} What we do</span>
+      <h2>Eight services. <span class="accent-italic">One flat fee.</span></h2>
+      <p>Real engineers in your timezone. No contracts. No surprise invoices. Just IT that works.</p>
     </div>
     <div class="grid grid--3">
       {% for s in services %}
       <a href="/{{ s.slug }}/" class="card card--service">
-        <div class="card__icon"><i class="{{ s.icon }}"></i></div>
+        <div class="card__icon">{{ icon(s.icon, 32) }}</div>
         <h3>{{ s.title }}</h3>
         <p>{{ s.blurb }}</p>
-        <span class="card__more">Learn more <i class="fas fa-arrow-right"></i></span>
+        <span class="card__more">Learn more {{ icon("arrow-right", 16) }}</span>
       </a>
       {% endfor %}
     </div>

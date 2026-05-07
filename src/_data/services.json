@@ -1,10 +1,10 @@
 [
-  { "slug": "managed-it-support",       "title": "Managed IT Support",       "icon": "fas fa-headset",       "blurb": "All-inclusive IT support for one low monthly fee per employee." },
-  { "slug": "managed-cybersecurity",    "title": "Managed Cybersecurity",    "icon": "fas fa-shield-alt",    "blurb": "Real-time threat detection and end-to-end protection for small business." },
-  { "slug": "managed-data-backups",     "title": "Managed Data Backups",     "icon": "fas fa-database",      "blurb": "Continuous, immutable backups so your data is always recoverable." },
-  { "slug": "it-consulting",            "title": "IT Consulting",            "icon": "fas fa-user-tie",      "blurb": "Strategic IT planning, audits, and roadmaps for growing businesses." },
-  { "slug": "computer-support",         "title": "Computer Support",         "icon": "fas fa-laptop",        "blurb": "Onsite and remote support for desktops, laptops, and devices." },
-  { "slug": "network-support",          "title": "Network Support",          "icon": "fas fa-network-wired", "blurb": "Network design, monitoring, and troubleshooting." },
-  { "slug": "server-support",           "title": "Server Support",           "icon": "fas fa-server",        "blurb": "Server administration, maintenance, and migration." },
-  { "slug": "cloud-computing-services", "title": "Cloud Computing Services", "icon": "fas fa-cloud",         "blurb": "Microsoft 365, Azure, and cloud workload management." }
+  { "slug": "managed-it-support",       "title": "Managed IT Support",       "icon": "headset",  "blurb": "All-inclusive IT support for one low monthly fee per employee." },
+  { "slug": "managed-cybersecurity",    "title": "Managed Cybersecurity",    "icon": "shield",   "blurb": "Real-time threat detection and end-to-end protection for small business." },
+  { "slug": "managed-data-backups",     "title": "Managed Data Backups",     "icon": "database", "blurb": "Continuous, immutable backups so your data is always recoverable." },
+  { "slug": "it-consulting",            "title": "IT Consulting",            "icon": "briefcase","blurb": "Strategic IT planning, audits, and roadmaps for growing businesses." },
+  { "slug": "computer-support",         "title": "Computer Support",         "icon": "laptop",   "blurb": "Onsite and remote support for desktops, laptops, and devices." },
+  { "slug": "network-support",          "title": "Network Support",          "icon": "network",  "blurb": "Network design, monitoring, and troubleshooting." },
+  { "slug": "server-support",           "title": "Server Support",           "icon": "server",   "blurb": "Server administration, maintenance, and migration." },
+  { "slug": "cloud-computing-services", "title": "Cloud Computing Services", "icon": "cloud",    "blurb": "Microsoft 365, Azure, and cloud workload management." }
 ]

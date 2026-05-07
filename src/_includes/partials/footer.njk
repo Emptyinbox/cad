@@ -1,3 +1,4 @@
+{% from "partials/icon.njk" import icon %}
 <footer class="site-footer">
   <div class="container">
     <div class="site-footer__grid">
@@ -6,8 +7,8 @@
         <img src="/assets/img/2022/12/ctrl-alt-delete-logo.png" alt="{{ site.name }}" width="200" height="40">
         <p>{{ site.description }}</p>
         <div class="site-footer__social">
-          <a href="{{ site.social.linkedin }}" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-          <a href="{{ site.social.facebook }}" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+          <a href="{{ site.social.linkedin }}" aria-label="LinkedIn" target="_blank" rel="noopener">{{ icon("linkedin", 20) }}</a>
+          <a href="{{ site.social.facebook }}" aria-label="Facebook" target="_blank" rel="noopener">{{ icon("facebook", 20) }}</a>
         </div>
       </div>
 
@@ -30,19 +31,19 @@
       </div>
 
       <div class="site-footer__col">
-        <h4>Contact</h4>
+        <h4>Get in touch</h4>
         <ul class="site-footer__contact">
-          <li><i class="fas fa-headset"></i> <a href="tel:{{ site.phonePrimaryHref }}">{{ site.phonePrimary }}</a></li>
-          <li><i class="fas fa-envelope"></i> <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-          <li><i class="fas fa-map-marker-alt"></i> {{ site.address.city }}, {{ site.address.region }}</li>
+          <li>{{ icon("headset", 16) }} <a href="tel:{{ site.phonePrimaryHref }}">{{ site.phonePrimary }}</a></li>
+          <li>{{ icon("envelope", 16) }} <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li>{{ icon("pin", 16) }} {{ site.address.city }}, {{ site.address.region }}</li>
         </ul>
-        <a href="/contact-us/" class="btn btn--secondary btn--small">Get a Quote</a>
+        <a href="/contact-us/" class="btn btn--primary btn--small" style="margin-top:1rem;">Get a quote {{ icon("arrow-right", 14) }}</a>
       </div>
 
     </div>
 
     <div class="site-footer__bottom">
-      <p>&copy; {{ "" | year }} {{ site.name }}. All rights reserved.</p>
+      <p>&copy; {{ "" | year }} {{ site.name }}. Built with care in BC.</p>
       <p><a href="/privacy-policy/">Privacy Policy</a></p>
     </div>
   </div>

@@ -1,21 +1,45 @@
 ---
 layout: layouts/base.njk
 ---
-{# STUB — will be replaced with full home page in Phase 5 #}
+{% from "partials/icon.njk" import icon %}
+
 <section class="hero">
   <div class="container">
     <div class="hero__inner">
       <div>
-        <span class="hero__eyebrow">Best IT Company in the Lower Mainland</span>
-        <h1>{{ title }}</h1>
-        <p class="hero__lede">{{ description or site.description }}</p>
+        <span class="hero__eyebrow">{{ icon("sparkle", 16) }} BC's friendliest IT team</span>
+        <h1>IT support that <span class="accent-underline">actually works.</span></h1>
+        <p class="hero__lede">Fully managed IT for small businesses across British Columbia and Alberta. Real engineers, flat monthly pricing, and no jargon. Founded by white-hat hackers in 2013, now keeping {{ "" | year }}'s small businesses running smooth.</p>
         <div class="hero__actions">
-          <a href="tel:{{ site.phonePrimaryHref }}" class="btn btn--primary btn--lg"><i class="fas fa-headset"></i> {{ site.phonePrimary }}</a>
-          <a href="/contact-us/" class="btn btn--outline btn--lg">Get a quote</a>
+          <a href="tel:{{ site.phonePrimaryHref }}" class="btn btn--primary btn--lg">{{ icon("headset", 18) }} {{ site.phonePrimary }}</a>
+          <a href="/contact-us/" class="btn btn--outline btn--lg">Get a free quote</a>
         </div>
       </div>
       <div class="hero__media">
-        <iframe src="https://www.youtube.com/embed/{{ site.video.pitchYouTubeId }}" title="{{ site.name }} pitch video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/{{ site.video.pitchYouTubeId }}?rel=0" title="{{ site.name }} — meet the team" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="proof">
+  <div class="container">
+    <div class="proof__row">
+      <div>
+        <span class="proof__stat">60<em>+</em></span>
+        <span class="proof__label">Companies looked after</span>
+      </div>
+      <div>
+        <span class="proof__stat">2,000<em>+</em></span>
+        <span class="proof__label">Users under management</span>
+      </div>
+      <div>
+        <span class="proof__stat">22</span>
+        <span class="proof__label">Engineers and good humans</span>
+      </div>
+      <div>
+        <span class="proof__stat">{{ "" | year | int - site.founded }}<em>yrs</em></span>
+        <span class="proof__label">Keeping BC online since 2013</span>
       </div>
     </div>
   </div>
@@ -23,19 +47,38 @@ layout: layouts/base.njk
 
 {% include "partials/services-grid.njk" %}
 
-<section class="section section--alt">
+<section class="section section--paper">
   <div class="container">
     <div class="section-head">
-      <h2>Cities we serve</h2>
-      <p>Onsite and remote IT support across British Columbia and Alberta.</p>
+      <span class="section-head__eyebrow">{{ icon("pin", 14) }} Where we work</span>
+      <h2>Onsite + remote across <span class="accent-italic">BC and Alberta</span></h2>
+      <p>Our techs are spread across the lower mainland and beyond, so help is rarely far away.</p>
     </div>
-    <ul class="chips">
+    <ul class="chips" style="justify-content:center;">
       {% for province, info in locations | dictsort %}
         {% for city in info.cities %}
-        <li><a href="/locations-served/{{ province }}/{{ city.slug }}/"><i class="fas fa-map-marker-alt"></i> {{ city.title }}</a></li>
+        <li><a href="/locations-served/{{ province }}/{{ city.slug }}/">{{ icon("pin") }} {{ city.title }}</a></li>
         {% endfor %}
       {% endfor %}
     </ul>
+  </div>
+</section>
+
+<section class="section section--cream">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-head__eyebrow">{{ icon("briefcase", 14) }} Industries we know</span>
+      <h2>We speak your business.</h2>
+      <p>From accounting firms to construction sites, we tailor the toolkit to how you actually work.</p>
+    </div>
+    <div class="grid grid--4">
+      {% for ind in industries %}
+      <a href="/industries/{{ ind.slug }}/" class="card">
+        <div class="card__icon">{{ icon(ind.icon, 30) }}</div>
+        <h3 style="font-size:1.1rem;">{{ ind.title }}</h3>
+      </a>
+      {% endfor %}
+    </div>
   </div>
 </section>
 
