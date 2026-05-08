@@ -16,7 +16,7 @@ Whether it's hardware issues, software glitches, or system slowdowns, we're here
 
 Running a small business is challenging enough without dealing with sluggish computers, random crashes, or unresponsive software. Every minute you spend wrestling with these problems is a minute taken away from serving your customers, growing your business, and achieving your goals.
 
-How often have you found yourself frustrated by a system that's just not cooperating? Whether it's a computer freezing in the middle of an important task, an application refusing to load, or constant slowdowns that leave you staring at a loading bar, these issues are more than annoyances-they're productivity killers.
+How often have you found yourself frustrated by a system that's just not cooperating? Whether it's a computer freezing in the middle of an important task, an application refusing to load, or constant slowdowns that leave you staring at a loading bar, these issues are more than annoyances — they're productivity killers.
 
 Imagine how much smoother your operations could be if your computers worked flawlessly, reliably, and without interruptions. What if, instead of troubleshooting tech issues, you could focus your time and energy on running your business? That's what professional computer support delivers: peace of mind, efficient operations, and the freedom to do what you do best.
 

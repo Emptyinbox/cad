@@ -22,7 +22,7 @@ Your inbox holds years of client conversations, deals, and sensitive business in
 ## Microsoft 365 Email Migration Services
 
 Moving to Microsoft 365? We make it easy. Whether you're switching from Gmail, an old Exchange server, or a basic email system like [POP3](https://en.wikipedia.org/wiki/Post_Office_Protocol) or [IMAP](https://support.microsoft.com/en-us/office/what-are-imap-and-pop-ca2c5799-49f9-4079-aefe-ddca85d5b1c9), we'll help you move everything over without the stress.
-With our **Full-Service Migration**, we handle the hard stuff-so you don't have to. Want to do it yourself but just need some tools to help? We offer a **Self-Service** option too.
+With our **Full-Service Migration**, we handle the hard stuff — so you don't have to. Want to do it yourself but just need some tools to help? We offer a **Self-Service** option too.
 
 ### What's Included in Our Full-Service Migration
 

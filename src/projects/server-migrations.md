@@ -123,7 +123,7 @@ We do not just move your data and leave. Ctrl Alt Delete offers [ongoing monitor
 You don't have to worry when it comes to migrating your servers. Contact the lower mainland's most trusted server migration experts and start the process of migrating your applications and data today.
 ![ctrl alt delete logo](/assets/img/2022/12/ctrl-alt-delete-logo.png "ctrl-alt-delete-logo")
 
-*"We thought moving to the cloud would be a huge disruption-but Control Alt Delete made it painless. Our team adapted quickly, and the difference in speed and reliability has been night and day."*
+*"We thought moving to the cloud would be a huge disruption — but Control Alt Delete made it painless. Our team adapted quickly, and the difference in speed and reliability has been night and day."*
 
 ## Get A Free Server Migration Quote
 

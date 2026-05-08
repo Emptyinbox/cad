@@ -14,7 +14,7 @@ Boost productivity, minimize downtime and support your businesses growth with ou
 
 ## Accounting Expertise + IT Expertise + Cybersecurity Expertise = Your Success
 
-As a Accountant, staying ahead of cybersecurity, system uptime, and regulatory compliance is critical, but managing your IT shouldn’t distract you from your core work. In today’s fast-paced accounting industry, unreliable tech support or outdated systems can cost you time, money, and clients.
+As an Accountant, staying ahead of cybersecurity, system uptime, and regulatory compliance is critical, but managing your IT shouldn’t distract you from your core work. In today’s fast-paced accounting industry, unreliable tech support or outdated systems can cost you time, money, and clients.
 
 That’s where Control Alt Delete steps in. Since 2013, we’ve supported over 60 Canadian businesses and 2,000 users with tailored IT solutions that keep Accountants like you focused on growth, not glitches. Our 22person team of Canadian nice guys and gals combines fast, friendly service with enterprise-grade tech to keep your operations smooth and secure.
 

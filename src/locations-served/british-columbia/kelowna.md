@@ -22,7 +22,7 @@ Do you find yourself spending hours troubleshooting computer issues or dealing w
 
 Every moment spent on IT distractions is time taken away from what truly matters-your people, your customers, and your bottom line. At Ctrl Alt Delete, we understand these challenges and are here to ensure that your technology works for you, not against you. Let us handle your IT so you can stay focused on driving sales, building your team, and achieving your business goals.
 
-How often have you found yourself frustrated by a system that's just not cooperating? Whether it's a computer freezing in the middle of an important task, an application refusing to load, or constant slowdowns that leave you staring at a loading bar, these issues are more than annoyances-they're productivity killers.
+How often have you found yourself frustrated by a system that's just not cooperating? Whether it's a computer freezing in the middle of an important task, an application refusing to load, or constant slowdowns that leave you staring at a loading bar, these issues are more than annoyances — they're productivity killers.
 
 Imagine how much smoother your operations could be if your computers worked flawlessly, reliably, and without interruptions. What if, instead of troubleshooting tech issues, you could focus your time and energy on running your business? That's what professional computer support delivers: peace of mind, efficient operations, and the freedom to do what you do best.
 

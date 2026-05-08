@@ -1,0 +1,91 @@
+{# Related-content block — usage:
+   {% from "partials/related.njk" import related %}
+   {% set kind = "service" %} or "industry" or "city" or "project"
+   {{ related(kind, currentSlug, services, industries, locations, projects) }}
+#}
+{% from "partials/icon.njk" import icon %}
+
+{% macro related(kind, currentSlug, services, industries, locations, projects) %}
+{% if kind == "service" %}
+<section class="section section--soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-head__eyebrow">{{ icon("sparkle", 14) }} Other services</span>
+      <h2>The full <span class="accent-italic">stack of support.</span></h2>
+    </div>
+    <div class="grid grid--3">
+      {% for s in services %}
+        {% if s.slug != currentSlug %}
+        <a href="/{{ s.slug }}/" class="card">
+          <div class="card__icon">{{ icon(s.icon, 28) }}</div>
+          <h3>{{ s.title }}</h3>
+          <p>{{ s.blurb }}</p>
+          <span class="card__more">Learn more {{ icon("arrow-right", 16) }}</span>
+        </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% elif kind == "industry" %}
+<section class="section section--soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-head__eyebrow">{{ icon("briefcase", 14) }} Other industries</span>
+      <h2>We also support these <span class="accent-italic">businesses.</span></h2>
+    </div>
+    <ul class="chips" style="justify-content:center;">
+      {% for ind in industries %}
+        {% if ind.slug != currentSlug %}
+        <li><a href="/industries/{{ ind.slug }}/">{{ icon(ind.icon) }} {{ ind.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% elif kind == "city" %}
+<section class="section section--soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-head__eyebrow">{{ icon("pin", 14) }} Other locations</span>
+      <h2>Cities we also <span class="accent-italic">cover.</span></h2>
+    </div>
+    <ul class="chips" style="justify-content:center;">
+      {% for province, info in locations | dictsort %}
+        {% for city in info.cities %}
+          {% if city.slug != currentSlug %}
+          <li><a href="/locations-served/{{ province }}/{{ city.slug }}/">{{ icon("pin") }} {{ city.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% elif kind == "project" %}
+<section class="section section--soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-head__eyebrow">{{ icon("sparkle", 14) }} Other projects</span>
+      <h2>Other one-time <span class="accent-italic">moves.</span></h2>
+    </div>
+    <div class="grid grid--3">
+      {% set projectInfo = {
+        "email-migrations":  {"icon": "envelope", "blurb": "Move from Gmail, Exchange, or POP3 to Microsoft 365 — no lost calendar invites."},
+        "cloud-migrations":  {"icon": "cloud",    "blurb": "Lift workloads to Azure or M365 — or out of them, if that's the play."},
+        "server-migrations": {"icon": "server",   "blurb": "Replace, consolidate, or move on-prem to cloud. Planned and executed."}
+      } %}
+      {% for slug, info in projectInfo %}
+        {% if slug != currentSlug %}
+        <a href="/projects/{{ slug }}/" class="card">
+          <div class="card__icon">{{ icon(info.icon, 28) }}</div>
+          <h3>{{ slug | titleCase }}</h3>
+          <p>{{ info.blurb }}</p>
+          <span class="card__more">Learn more {{ icon("arrow-right", 16) }}</span>
+        </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+{% endmacro %}

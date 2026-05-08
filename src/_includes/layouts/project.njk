@@ -1,4 +1,33 @@
 ---
-layout: layouts/page.njk
+layout: layouts/base.njk
 ---
-{{ content | safe }}
+{% from "partials/icon.njk" import icon %}
+{% from "partials/related.njk" import related %}
+
+{% set currentSlug = page.fileSlug %}
+{% set projectIcons = { "email-migrations": "envelope", "cloud-migrations": "cloud", "server-migrations": "server" } %}
+
+<header class="page-header page-header--rich">
+  <div class="container">
+    <div class="page-header__breadcrumb"><a href="/">Home</a> / <a href="/projects/">Projects</a> / {{ title }}</div>
+    <div class="page-header__head">
+      <div class="page-header__icon">{{ icon(projectIcons[currentSlug] or "sparkle", 36) }}</div>
+      <div>
+        <h1>{{ title }}</h1>
+        {% if description %}<p class="page-header__lede">{{ description }}</p>{% endif %}
+        <div class="page-header__actions">
+          <a href="/contact-us/" class="btn btn--primary">{{ icon("arrow-right", 16) }} Talk to us</a>
+          <a href="tel:{{ site.phonePrimaryHref }}" class="btn btn--outline">{{ icon("headset", 16) }} {{ site.phonePrimary }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article class="prose prose--rich" data-faq>
+  {{ content | safe }}
+</article>
+
+{{ related("project", currentSlug, services, industries, locations) }}
+
+{% include "partials/cta.njk" %}

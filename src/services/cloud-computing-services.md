@@ -136,7 +136,7 @@ Not necessarily. Many of our clients use us as their outsourced IT department. I
 Talk to our experts and start building the high-performance IT environment your business needs.
 ![ctrl alt delete logo](/assets/img/2022/12/ctrl-alt-delete-logo.png "ctrl-alt-delete-logo")
 
-*"We thought moving to the cloud would be a huge disruption-but Control Alt Delete made it painless. Our team adapted quickly, and the difference in speed and reliability has been night and day."*
+*"We thought moving to the cloud would be a huge disruption — but Control Alt Delete made it painless. Our team adapted quickly, and the difference in speed and reliability has been night and day."*
 
 ## Request Your Free Cloud Modernization Audit
 

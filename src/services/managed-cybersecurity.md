@@ -16,27 +16,15 @@ Safeguard your business and stay one step ahead of cyber threats with our end-to
 
 ## Cyber Threats Lurk Around Every Click
 
-Small businesses in Vancouver, Whistler, and the Lower Mainland are under **constant threat of cybersecurity breakdowns**. From phishing scams that trick your employees into handing over sensitive data, to ransomware that locks you out of critical systems, these malicious activities can **bring your operations to a grinding halt**. Time, money, and reputation are at stake-and we've witnessed the damage too many times to tell.
+Small businesses in Vancouver, Whistler, and the Lower Mainland are under **constant threat of cybersecurity breakdowns**. From phishing scams that trick your employees into handing over sensitive data, to ransomware that locks you out of critical systems, these malicious activities can **bring your operations to a grinding halt**. Time, money, and reputation are at stake — and we've witnessed the damage too many times to tell.
 
-As a fellow small business, we know the last thing you need is the headache of securing your network, devices, and data on your own. That's where Control Alt Delete comes in - we take that burden off your shoulders by providing **proactive, enterprise-grade cybersecurity solutions** tailored to businesses just like yours.
+As a fellow small business, we know the last thing you need is the headache of securing your network, devices, and data on your own. That's where Control Alt Delete comes in — we take that burden off your shoulders by providing **proactive, enterprise-grade cybersecurity solutions** tailored to businesses just like yours.
 
 ## Why Your Business Needs Managed Cybersecurity
 
 Forward-thinking businesses prioritize cybersecurity to mitigate risks, reduce costs, and maintain a competitive edge. Managed cybersecurity offers a seamless, cost-effective, and expert-driven solution that successful companies are embracing.
 
-$0B
-
-53 billion in downtime costs due to ransomware.
-
-
-0%
-
-Estimated web applications are vulnerable due to coding flaws.
-
-
-0%
-
-Increase in cyber attacks year over year. A continually growing problem.
+Ransomware alone costs businesses tens of billions of dollars in downtime every year. The vast majority of web applications carry exploitable coding flaws, and attack volume keeps climbing year over year. Going it alone is no longer an option for most small businesses.
 
 ## Managed Cybersecurity Services
 
@@ -44,7 +32,7 @@ How we protect and secure your business from cyber threats.
 
 ### Advanced Threat Monitoring & Rapid Response
 
-Our Security Operations Center (SOC) team uses advanced SIEM technology to continuously monitor your network traffic and endpoints. We don't just send alerts-we provide incident root cause and impact analysis, taking PAAs to stop threats in real-time. Whether blocking a malicious IP address, isolating an infected system, resetting a compromised password, we spring to action in minutes.
+Our Security Operations Center (SOC) team uses advanced SIEM technology to continuously monitor your network traffic and endpoints. We don't just send alerts — we provide incident root cause and impact analysis, taking PAAs to stop threats in real-time. Whether blocking a malicious IP address, isolating an infected system, resetting a compromised password, we spring to action in minutes.
 
 ![cyber pro monitoring for cyber threats](/assets/img/2024/08/advanced-threat-detection.jpg "Cybersecurity expert analyzing an intricate network diagram disp")
 ![layered cybersecurity detections](/assets/img/2024/08/multi-layered-cyber-defense.jpg "An ominous neon skull on a circuit board backdrop, symbolizing a")
@@ -55,7 +43,7 @@ A layered approach defends against sophisticated attacks from multiple bad actor
 
 ### Proactive Vulnerability Tests & Security Assessments
 
-Cybersecurity isn't just about reacting to threats-it's about staying ahead of them. We regularly assess your IT environment using both automated scanning and manual penetration testing. Our experts prioritize weaknesses, applying rapid remediation to keep your defenses resilient and prepared for whatever comes next.
+Cybersecurity isn't just about reacting to threats — it's about staying ahead of them. We regularly assess your IT environment using both automated scanning and manual penetration testing. Our experts prioritize weaknesses, applying rapid remediation to keep your defenses resilient and prepared for whatever comes next.
 
 ![cyber security penetration test on a computer](/assets/img/2024/08/cyber-security-assessments.jpg "Computer screen showing antivirus software running a scan")
 ![cyber security architect designing a security solution](/assets/img/2024/08/managed-cyber-security-solutions.jpg "managed cyber security solutions")

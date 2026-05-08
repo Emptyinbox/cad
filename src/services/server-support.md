@@ -18,7 +18,7 @@ A sudden crash, a security breach, or a hardware failure could throw your busine
 How long could your business survive without access to critical files, customer data, and essential applications? Could your team stay productive if your systems went offline for hours-or even days? The cost of downtime isn't just measured in lost revenue, but in lost trust, missed opportunities, and frustrated employees.
 With proactive **server support**, you don't have to wait for problems to happen-you can prevent them. Our team ensures your servers stay optimized, secure, and running smoothly, so your business never skips a beat.
 
-How often have you found yourself frustrated by a system that's just not cooperating? Whether it's a computer freezing in the middle of an important task, an application refusing to load, or constant slowdowns that leave you staring at a loading bar, these issues are more than annoyances-they're productivity killers.
+How often have you found yourself frustrated by a system that's just not cooperating? Whether it's a computer freezing in the middle of an important task, an application refusing to load, or constant slowdowns that leave you staring at a loading bar, these issues are more than annoyances — they're productivity killers.
 
 Imagine how much smoother your operations could be if your computers worked flawlessly, reliably, and without interruptions. What if, instead of troubleshooting tech issues, you could focus your time and energy on running your business? That's what professional server support delivers: peace of mind, efficient operations, and the freedom to do what you do best.
 

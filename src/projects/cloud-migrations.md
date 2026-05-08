@@ -116,7 +116,7 @@ Using standard, well-supported tools and sensible protections reduces risk and m
 Don't let legacy systems cap your growth. Experience peace of mind with our proven cloud migration plans.
 ![ctrl alt delete logo](/assets/img/2022/12/ctrl-alt-delete-logo.png "ctrl-alt-delete-logo")
 
-*"We thought moving to the cloud would be a huge disruption-but Control Alt Delete made it painless. Our team adapted quickly, and the difference in speed and reliability has been night and day."*
+*"We thought moving to the cloud would be a huge disruption — but Control Alt Delete made it painless. Our team adapted quickly, and the difference in speed and reliability has been night and day."*
 
 ## Book a Free Cloud Migration Planning Session
 

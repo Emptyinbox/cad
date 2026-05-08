@@ -31,6 +31,9 @@ module.exports = function (eleventyConfig) {
       .replace(/-/g, " ")
       .replace(/\b\w/g, (c) => c.toUpperCase())
   );
+  eleventyConfig.addFilter("findBySlug", (arr, slug) =>
+    Array.isArray(arr) ? arr.find((it) => it && it.slug === slug) : null
+  );
 
   // ----- Collections -----
   eleventyConfig.addCollection("services", (api) =>
