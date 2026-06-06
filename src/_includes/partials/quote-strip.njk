@@ -1,0 +1,7 @@
+{# Daily inspirational quote — same pool + 7am Pacific rollover as the client portal (lib/daily-quote.ts). Rendered by site.js (initDailyQuote). #}
+<div class="quote-strip" data-quote-strip aria-live="polite">
+  <script type="application/json" data-quotes>{{ quotes | dump | safe }}</script>
+  <span class="quote-strip__mark" aria-hidden="true">&ldquo;</span>
+  <span class="quote-strip__text" data-quote-text></span>
+  <span class="quote-strip__author" data-quote-author></span>
+</div>

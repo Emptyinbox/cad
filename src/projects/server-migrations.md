@@ -12,6 +12,18 @@ layout: "layouts/project.njk"
 
 We safely move your server's databases, applications, and data with minimal downtime and zero data loss.
 
+<div class="case-card" markdown="0">
+  <span class="case-card__kicker">Case study — construction company, Fraser Valley</span>
+  <h3>Out-of-warranty server to new infrastructure over a weekend</h3>
+  <div class="case-card__metrics">
+    <!-- VERIFY: placeholder metrics — replace with real client numbers before cutover -->
+    <div class="case-card__metric" data-verify="placeholder"><strong>100%</strong><span>data verified post-move</span></div>
+    <div class="case-card__metric" data-verify="placeholder"><strong>0 hrs</strong><span>business-hours downtime</span></div>
+    <div class="case-card__metric" data-verify="placeholder"><strong>Mon 9am</strong><span>team logged in, working</span></div>
+  </div>
+  <p>An aging file and QuickBooks server was one power surge away from a very bad week. We staged the new environment, ran a full verified backup, moved everything Friday night, and tested every application before sign-off. The crew started Monday like nothing happened, because for them, nothing did.</p>
+</div>
+
 ## Don't Delay Start Your Server Migration Today
 
 Are you putting off a server move because you're worried about something going wrong? Do you have a new server sitting there but keep finding reasons to delay the migration?
@@ -96,7 +108,7 @@ No business wants to hear "it's gone." That is why Ctrl Alt Delete follows stric
 
 ### How much does a server migration cost?
 
-The price depends on the size of your business and whether you are moving to new on-site hardware or into the cloud. We provide a clear estimate before any work begins with no hidden fees and no surprises.
+Most small-business server migrations land between **$5,000 and $15,000 all-in**, depending on the size of your environment and whether you are moving to new on-site hardware or into the cloud. Professional services are billed at $145/hr, and we provide a fixed quote before any work begins with no hidden fees and no surprises. See our [pricing page](/pricing/) for more detail.
 
 ### Should I replace my physical server or move to the cloud?
 

@@ -22,6 +22,8 @@ layout: layouts/base.njk
   </div>
 </section>
 
+{% include "partials/hero-carousel.njk" %}
+
 <section class="proof">
   <div class="container">
     <div class="proof__row">
@@ -47,9 +49,145 @@ layout: layouts/base.njk
 
 {% include "partials/services-grid.njk" %}
 
+<section class="section section--sand">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-head__eyebrow">{{ icon("sparkle", 14) }} No mystery pricing</span>
+      <h2>Know the ballpark <span class="accent-italic">before you call.</span></h2>
+      <p>Most IT companies hide their pricing behind a sales call. We publish honest ranges so you can decide if we're in your budget in about ten seconds.</p>
+    </div>
+    <div class="grid grid--3">
+      <div class="card">
+        <h3 style="font-size:1.05rem;">Managed IT</h3>
+        <p style="font-size:1.5rem;font-weight:800;color:var(--primary);margin-bottom:.25rem;">$110–$225<span style="font-size:.85rem;font-weight:400;color:var(--ink-mute);"> /user/mo</span></p>
+        <p style="font-size:.92rem;">Helpdesk, monitoring, backups, and security — everything handled.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;">Projects &amp; migrations</h3>
+        <p style="font-size:1.5rem;font-weight:800;color:var(--primary);margin-bottom:.25rem;">$145<span style="font-size:.85rem;font-weight:400;color:var(--ink-mute);"> /hr</span></p>
+        <p style="font-size:.92rem;">Email, server, and cloud moves with a fixed quote before work starts.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;">Cybersecurity add-on</h3>
+        <p style="font-size:1.5rem;font-weight:800;color:var(--primary);margin-bottom:.25rem;">$15–$45<span style="font-size:.85rem;font-weight:400;color:var(--ink-mute);"> /user/mo</span></p>
+        <p style="font-size:.92rem;">MDR, awareness training, and cyber-insurance support.</p>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:2rem;"><a href="/pricing/" class="btn btn--primary">See full pricing details</a></p>
+  </div>
+</section>
+
+<section class="section section--paper">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-head__eyebrow">{{ icon("sparkle", 14) }} Transparency, built in</span>
+      <h2>The most user-friendly <span class="accent-italic">client portal</span> in the business.</h2>
+      <p>Most providers hand you a clunky ticket email and call it transparency. Our clients get a portal we built ourselves — and actually want to log into.</p>
+    </div>
+    <div class="grid grid--4">
+      <div class="card">
+        <div class="card__icon">{{ icon("laptop", 28) }}</div>
+        <h3 style="font-size:1.05rem;">Live tickets, plain English</h3>
+        <p style="margin-bottom:0;">See exactly where every ticket stands, with AI summaries that skip the jargon.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon">{{ icon("shield", 28) }}</div>
+        <h3 style="font-size:1.05rem;">One-tap emergency</h3>
+        <p style="margin-bottom:0;">A red button for the moments that can't wait. It pages us instantly.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon">{{ icon("chart", 28) }}</div>
+        <h3 style="font-size:1.05rem;">Lifecycle budget tool</h3>
+        <p style="margin-bottom:0;">Know your IT spend five years out. No surprise refresh years, ever.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon">{{ icon("map", 28) }}</div>
+        <h3 style="font-size:1.05rem;">Your roadmap &amp; feedback</h3>
+        <p style="margin-bottom:0;">Your IT plan, your documents, and a pulse check on how we're doing — all in one place.</p>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:2rem;">
+      <a href="{{ heroPromos.portalUrl }}" class="btn btn--primary" target="_blank" rel="noopener">See the portal</a>
+      <a href="/contact-us/" class="btn btn--outline" style="margin-left:.5rem;">Get an invite</a>
+    </p>
+  </div>
+</section>
+
+<section class="section outcomes">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-head__eyebrow" style="color:var(--accent);">{{ icon("shield", 14) }} What you actually get</span>
+      <h2>Outcomes, not promises.</h2>
+      <p>Cybersecurity matters, uptime matters — but what does that mean for you? Here's what our clients measure.</p>
+    </div>
+    <div class="outcomes__grid">
+      <!-- VERIFY: all four stats below are placeholders pending real CAD numbers -->
+      <div class="outcome" data-verify="placeholder">
+        <span class="outcome__stat">1,400+</span>
+        <span class="outcome__label">Threats blocked monthly</span>
+        <span class="outcome__note">Phishing, malware, and intrusion attempts stopped across client endpoints.</span>
+      </div>
+      <div class="outcome" data-verify="placeholder">
+        <span class="outcome__stat">38%</span>
+        <span class="outcome__label">Fewer tickets after 90 days</span>
+        <span class="outcome__note">Proactive patching and monitoring means problems get fixed before you notice them.</span>
+      </div>
+      <div class="outcome" data-verify="placeholder">
+        <span class="outcome__stat">15 min</span>
+        <span class="outcome__label">Average first response</span>
+        <span class="outcome__note">A real engineer, not a chatbot, during business hours.</span>
+      </div>
+      <div class="outcome" data-verify="placeholder">
+        <span class="outcome__stat">99.9%</span>
+        <span class="outcome__label">Backup restore success</span>
+        <span class="outcome__note">Backups are tested with real restores — not just green checkmarks.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% include "partials/why-us.njk" %}
 
 {% include "partials/testimonials.njk" %}
+
+<section class="section case-strip">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-head__eyebrow">{{ icon("briefcase", 14) }} Proof, not pitch</span>
+      <h2>Recent <span class="accent-italic">project wins.</span></h2>
+    </div>
+    <div class="grid grid--3">
+      <a href="/projects/email-migrations/" class="case-card">
+        <span class="case-card__kicker">Email migration</span>
+        <h3>Google Workspace → Microsoft 365 without losing a thread</h3>
+        <div class="case-card__metrics">
+          <!-- VERIFY: placeholder metrics -->
+          <div class="case-card__metric" data-verify="placeholder"><strong>0</strong><span>mailboxes lost</span></div>
+          <div class="case-card__metric" data-verify="placeholder"><strong>2 days</strong><span>cutover window</span></div>
+        </div>
+        <p style="font-size:.92rem;margin:0;">How we move years of client conversations, calendars, and shared mailboxes without downtime.</p>
+      </a>
+      <a href="/projects/cloud-migrations/" class="case-card">
+        <span class="case-card__kicker">Cloud migration</span>
+        <h3>From aging hardware to cloud-first, in phases</h3>
+        <div class="case-card__metrics">
+          <div class="case-card__metric" data-verify="placeholder"><strong>~30%</strong><span>infra cost reduction</span></div>
+          <div class="case-card__metric" data-verify="placeholder"><strong>0 hrs</strong><span>team downtime</span></div>
+        </div>
+        <p style="font-size:.92rem;margin:0;">Right workload, right cloud — moved in stages so the team never stopped working.</p>
+      </a>
+      <a href="/projects/server-migrations/" class="case-card">
+        <span class="case-card__kicker">Server migration</span>
+        <h3>Out-of-warranty server to new infrastructure over a weekend</h3>
+        <div class="case-card__metrics">
+          <div class="case-card__metric" data-verify="placeholder"><strong>100%</strong><span>data verified post-move</span></div>
+          <div class="case-card__metric" data-verify="placeholder"><strong>Mon 9am</strong><span>team logged in, working</span></div>
+        </div>
+        <p style="font-size:.92rem;margin:0;">QuickBooks, file shares, and domain services moved, tested, and signed off before Monday.</p>
+      </a>
+    </div>
+  </div>
+</section>
 
 <section class="section section--sand">
   <div class="container">

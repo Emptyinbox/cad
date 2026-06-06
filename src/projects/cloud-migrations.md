@@ -10,7 +10,19 @@ layout: "layouts/project.njk"
 
 # Seamless Cloud Migration Services With Minimal Disruption For Small Businesses
 
-Migrate your applications, infrastructure, databases to the cloud and so your business can become agile and resilient.
+Migrate your applications, infrastructure, and databases to the cloud so your business can become agile and resilient.
+
+<div class="case-card" markdown="0">
+  <span class="case-card__kicker">Case study — multi-location services business, BC</span>
+  <h3>From aging hardware to cloud-first, in phases</h3>
+  <div class="case-card__metrics">
+    <!-- VERIFY: placeholder metrics — replace with real client numbers before cutover -->
+    <div class="case-card__metric" data-verify="placeholder"><strong>~30%</strong><span>infrastructure cost reduction</span></div>
+    <div class="case-card__metric" data-verify="placeholder"><strong>3 phases</strong><span>zero all-at-once risk</span></div>
+    <div class="case-card__metric" data-verify="placeholder"><strong>0 hrs</strong><span>team downtime during moves</span></div>
+  </div>
+  <p>File shares first, then line-of-business apps, then the last server retired. Each phase was planned around the client's busy season, tested in staging, and signed off before the next began. Finance got predictable monthly costs instead of surprise hardware bills.</p>
+</div>
 
 ## Build Faster. Work Anywhere. Grow Safely.
 

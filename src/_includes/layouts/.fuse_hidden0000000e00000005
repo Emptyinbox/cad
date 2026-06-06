@@ -1,0 +1,18 @@
+---
+layout: layouts/page.njk
+---
+{{ content | safe }}
+<section class="section section--alt">
+  <div class="container">
+    <h2>Cities we serve in {{ title }}</h2>
+    <ul class="chips">
+      {% for province, info in locations | dictsort %}
+        {% if info.title == title %}
+          {% for city in info.cities %}
+          <li><a href="/locations-served/{{ province }}/{{ city.slug }}/"><i class="fas fa-map-marker-alt"></i> {{ city.title }}</a></li>
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>

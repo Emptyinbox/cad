@@ -17,3 +17,7 @@ We're a team of **22 Canadian nice guys and gals** and general IT do-gooders. So
 Our background as **"white hat" hackers** means we're well ahead of the curve on cybersecurity. We know how attackers think because we used to be them.
 
 We have **two offices** in Whistler and Vancouver with techs distributed throughout the lower mainland to provide onsite support — usually within hours, often within minutes.
+
+## Transparency is how we operate
+
+Our pricing is published — [see the actual ranges](/pricing/) before you ever talk to us. Our [client portal](https://cad-client-portal.vercel.app/) shows you every ticket in plain English, gives you a one-tap emergency button, and maps your IT budget five years out. No mystery, no gotchas. That's the whole philosophy.

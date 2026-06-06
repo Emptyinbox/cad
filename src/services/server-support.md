@@ -10,7 +10,18 @@ layout: "layouts/service.njk"
 
 # Unreliable Servers Are Costing Your Business Time & Money
 
-Your business depends on stable, high-performing servers. Downtime, crashes, and slow performance lead to lost revenue and frustrated customers. Our expert **server support** services ensure your infrastructure runs smoothly 24/7.
+Your business depends on stable, high-performing servers. Downtime, crashes, and slow performance lead to lost revenue and frustrated customers. Our expert **server support** services keep your infrastructure monitored and maintained around the clock.
+
+<a class="case-card" href="/projects/server-migrations/" markdown="0">
+  <span class="case-card__kicker">Case study</span>
+  <h3>Out-of-warranty server to new infrastructure over a weekend</h3>
+  <div class="case-card__metrics">
+    <!-- VERIFY: placeholder metrics -->
+    <div class="case-card__metric" data-verify="placeholder"><strong>100%</strong><span>data verified post-move</span></div>
+    <div class="case-card__metric" data-verify="placeholder"><strong>Mon 9am</strong><span>team logged in, working</span></div>
+  </div>
+  <p>See how we replace aging servers without business-hours downtime →</p>
+</a>
 
 ## Helping Small Businesses Avoid Downtime And Keep Their Servers Performing At A High Level
 

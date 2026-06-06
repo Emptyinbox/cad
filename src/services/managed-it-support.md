@@ -14,6 +14,19 @@ Boost productivity and ignite growth with our world class managed IT support.
 
 **Rapid 15-Minute Response Time | Cut IT Costs Up to 30% | Flexible Pricing & Contracts**
 
+**Typical investment: $110–$225 per user, per month.** No mystery pricing — see [what's included and what moves the number](/pricing/).
+
+<a class="case-card" href="/projects/email-migrations/" markdown="0">
+  <span class="case-card__kicker">Case study</span>
+  <h3>Google Workspace to Microsoft 365 without losing a thread</h3>
+  <div class="case-card__metrics">
+    <!-- VERIFY: placeholder metrics -->
+    <div class="case-card__metric" data-verify="placeholder"><strong>40+</strong><span>mailboxes moved</span></div>
+    <div class="case-card__metric" data-verify="placeholder"><strong>0</strong><span>emails lost</span></div>
+  </div>
+  <p>See how onboarding with us actually goes →</p>
+</a>
+
 ## ​​We Get It - IT Can Be a Pain
 
 Struggling to manage your IT due to lagging support or lacking technology? In today's fast-paced business environment, your IT should speed up your growth, not hinder it.

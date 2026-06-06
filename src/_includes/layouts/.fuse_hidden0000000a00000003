@@ -5,15 +5,17 @@ layout: layouts/base.njk
 {% from "partials/related.njk" import related %}
 
 {% set currentSlug = page.fileSlug %}
-{% set service = services | findBySlug(currentSlug) %}
 
 <header class="page-header page-header--rich">
   <div class="container">
-    <div class="page-header__breadcrumb"><a href="/">Home</a> / Services / {{ title }}</div>
+    <div class="page-header__breadcrumb">
+      <a href="/">Home</a> / <a href="/locations-served/">Locations</a> /
+      <a href="/locations-served/{{ province }}/">{{ province | titleCase }}</a> / {{ title }}
+    </div>
     <div class="page-header__head">
-      {% if service %}<div class="page-header__icon">{{ icon(service.icon, 36) }}</div>{% endif %}
+      <div class="page-header__icon">{{ icon("pin", 36) }}</div>
       <div>
-        <h1>{{ title }}</h1>
+        <h1>IT Services in {{ title }}</h1>
         {% if description %}<p class="page-header__lede">{{ description }}</p>{% endif %}
         <div class="page-header__actions">
           <a href="/contact-us/" class="btn btn--primary">{{ icon("arrow-right", 16) }} Get a quote</a>
@@ -24,12 +26,12 @@ layout: layouts/base.njk
   </div>
 </header>
 
-{% include "partials/trust-bar.njk" %}
-
 <article class="prose prose--rich" data-faq>
   {{ content | safe }}
 </article>
 
-{{ related("service", currentSlug, services, industries, locations) }}
+{% include "partials/services-grid.njk" %}
+
+{{ related("city", currentSlug, services, industries, locations) }}
 
 {% include "partials/cta.njk" %}

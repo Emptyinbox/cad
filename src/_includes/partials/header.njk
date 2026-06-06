@@ -2,7 +2,7 @@
 <header class="site-header" id="top">
   <div class="container site-header__inner">
     <a href="/" class="site-header__logo" aria-label="{{ site.name }} home">
-      <img src="/assets/img/2022/12/ctrl-alt-delete-logo.png" alt="{{ site.name }}" width="220" height="44">
+      {% include "partials/cad-logo.svg" %}
     </a>
 
     <button class="site-header__toggle" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
@@ -51,6 +51,7 @@
           </ul>
         </li>
 
+        <li><a href="/pricing/">Pricing</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/contact-us/">Contact</a></li>
       </ul>

@@ -1,0 +1,106 @@
+---
+title: "Pricing"
+permalink: "/pricing/"
+description: "Straight answers on what managed IT costs in BC. Ballpark ranges for managed IT support, cybersecurity, and migration projects — before you ever talk to sales."
+og_title: "Managed IT Pricing — Control Alt Delete"
+layout: "layouts/base.njk"
+---
+{% from "partials/icon.njk" import icon %}
+
+<header class="page-header page-header--rich">
+  <div class="container">
+    <div class="page-header__breadcrumb"><a href="/">Home</a> / Pricing</div>
+    <div class="page-header__head">
+      <div>
+        <h1>Straight answers on pricing.</h1>
+        <p class="page-header__lede">Most IT companies make you book a call before they'll whisper a number. We'd rather you walk in knowing the ballpark. These are honest ranges — your exact quote depends on headcount, servers, and how your business runs.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="pricing-grid">
+
+      <!-- VERIFY: per-user range is a market-typical estimate, not confirmed CAD pricing -->
+      <div class="price-card price-card--featured" data-verify="market-estimate">
+        <span class="price-card__flag">Most popular</span>
+        <h3>Managed IT</h3>
+        <p class="price-card__for">For teams of 5–100 who want IT handled, end to end.</p>
+        <span class="price-card__range">$110–$225</span>
+        <span class="price-card__unit">per user, per month (CAD)</span>
+        <ul>
+          <li>Unlimited helpdesk support from real engineers</li>
+          <li>Proactive monitoring and patching on every device</li>
+          <li>Managed backups with restore testing</li>
+          <li>Security baseline: MFA, email filtering, endpoint protection</li>
+          <li>Vendor management — we deal with your other tech suppliers</li>
+          <li>Quarterly business reviews with a plain-language roadmap</li>
+        </ul>
+        <a href="/contact-us/" class="btn btn--primary">Get your exact number</a>
+      </div>
+
+      <!-- Labour rate $145/hr is the real published CAD rate (from quote terms). Project ranges are estimates: VERIFY -->
+      <div class="price-card">
+        <h3>Projects &amp; migrations</h3>
+        <p class="price-card__for">Email, server, and cloud moves with a fixed scope and a clear finish line.</p>
+        <span class="price-card__range">$145/hr</span>
+        <span class="price-card__unit">professional services, billed in 15-minute increments</span>
+        <ul>
+          <li>Email migrations: typically $2,500–$7,500 <span data-verify="estimate">all-in</span></li>
+          <li>Server migrations: typically $5,000–$15,000 <span data-verify="estimate">all-in</span></li>
+          <li>Fixed quote before work starts — no surprises mid-project</li>
+          <li>Full backup and verification before anything moves</li>
+          <li>30 days of next-business-day support after go-live</li>
+        </ul>
+        <a href="/projects/" class="btn btn--outline">See how we run projects</a>
+      </div>
+
+      <!-- VERIFY: security add-on range is a market-typical estimate -->
+      <div class="price-card" data-verify="market-estimate">
+        <h3>Cybersecurity add-on</h3>
+        <p class="price-card__for">For teams that need more than the baseline — insurance requirements, compliance, or just peace of mind.</p>
+        <span class="price-card__range">$15–$45</span>
+        <span class="price-card__unit">per user, per month (CAD), on top of Managed IT</span>
+        <ul>
+          <li>Managed detection and response on every endpoint</li>
+          <li>Security awareness training and phishing simulations</li>
+          <li>Dark-web monitoring for your company credentials</li>
+          <li>Cyber-insurance questionnaire support</li>
+          <li>Annual security review with a written report</li>
+        </ul>
+        <a href="/managed-cybersecurity/" class="btn btn--outline">About our security work</a>
+      </div>
+
+    </div>
+
+    <p class="pricing-note">All prices in Canadian dollars; GST (5%) and PST (7%) apply. Ranges reflect typical engagements — the lower bound fits simple, cloud-first setups; the upper bound fits businesses with servers, compliance needs, or specialized line-of-business software. You'll have an exact number after one conversation.</p>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-head__eyebrow">{{ icon("sparkle", 14) }} Why we publish ranges</span>
+      <h2>Because "contact us for pricing" <span class="accent-italic">wastes your time.</span></h2>
+      <p>You wouldn't buy a pill without knowing what's in it or what it costs. We don't think IT should work that way either. Here's what moves you up or down the range:</p>
+    </div>
+    <div class="grid grid--3">
+      <div class="card">
+        <h3 style="font-size:1.05rem;">Toward the lower bound</h3>
+        <p style="font-size:.95rem;">Cloud-first, no on-premise servers, standard apps (Microsoft 365), one location, no regulatory requirements.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;">Mid-range</h3>
+        <p style="font-size:.95rem;">A server or two, line-of-business software (Sage, QuickBooks, EMR, AutoCAD), multiple locations, basic insurance requirements.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;">Toward the upper bound</h3>
+        <p style="font-size:.95rem;">Compliance frameworks, legacy systems, after-hours coverage needs, complex networks, or industries like healthcare, legal, and finance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "partials/cta.njk" %}

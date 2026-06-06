@@ -1,0 +1,52 @@
+{# Portal hero carousel — ported from client-portal/app/dashboard/HeroCarousel.tsx.
+   Same slides, gradients, stats, neural backdrop, 7s rotation, click-to-advance, dot nav.
+   Logic lives in site.js (initHeroCarousel). #}
+<section class="promo-hero" id="promo-hero" data-hero-carousel title="Click for the next highlight">
+  {% for s in heroPromos.slides %}
+  <div class="promo-hero__slide{% if loop.first %} is-active{% endif %}"
+       data-slide
+       style="background: {{ s.gradient }};">
+    <svg class="promo-hero__net" viewBox="0 0 800 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <defs>
+        <pattern id="heroDots-{{ loop.index }}" width="26" height="26" patternUnits="userSpaceOnUse">
+          <circle cx="1.5" cy="1.5" r="1.5" fill="rgba(255,255,255,0.10)"/>
+        </pattern>
+        <linearGradient id="heroLine-{{ loop.index }}" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="{{ s.accent }}" stop-opacity="0"/>
+          <stop offset="50%" stop-color="{{ s.accent }}" stop-opacity="0.55"/>
+          <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <rect width="800" height="300" fill="url(#heroDots-{{ loop.index }})"/>
+      <g stroke="url(#heroLine-{{ loop.index }})" stroke-width="1.2">
+        <line x1="120" y1="60" x2="300" y2="150"/><line x1="300" y1="150" x2="180" y2="240"/>
+        <line x1="300" y1="150" x2="520" y2="90"/><line x1="520" y1="90" x2="680" y2="200"/>
+        <line x1="300" y1="150" x2="560" y2="230"/><line x1="520" y1="90" x2="640" y2="40"/>
+      </g>
+      <circle cx="120" cy="60" r="4" fill="{{ s.accent }}"/><circle cx="300" cy="150" r="4" fill="#fff"/>
+      <circle cx="180" cy="240" r="4" fill="{{ s.accent }}"/><circle cx="520" cy="90" r="4" fill="#fff"/>
+      <circle cx="680" cy="200" r="4" fill="{{ s.accent }}"/><circle cx="560" cy="230" r="4" fill="#fff"/>
+      <circle cx="640" cy="40" r="4" fill="{{ s.accent }}"/>
+    </svg>
+    <span class="promo-hero__glow" style="background: radial-gradient(circle, {{ s.accent }}55, transparent 70%);"></span>
+    <div class="promo-hero__inner container">
+      <div class="promo-hero__copy">
+        <span class="promo-hero__eyebrow"><span class="promo-hero__pulse" style="background: {{ s.accent }};"></span>{{ s.eyebrow }}</span>
+        <h2>{{ s.title }}</h2>
+        <p>{{ s.body }}</p>
+        <a href="{% if s.href == 'portal' %}{{ heroPromos.portalUrl }}{% else %}{{ s.href }}{% endif %}" class="promo-hero__btn"{% if s.href == 'portal' %} target="_blank" rel="noopener"{% endif %}>Learn more <span aria-hidden="true" style="color:#D72638;">→</span></a>
+      </div>
+      <div class="promo-hero__stat">
+        <span class="promo-hero__icon" aria-hidden="true">{{ s.icon }}</span>
+        <span class="promo-hero__big">{{ s.stat }}</span>
+        <span class="promo-hero__label">{{ s.statLabel }}</span>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+  <div class="promo-hero__dots" data-dots>
+    {% for s in heroPromos.slides %}
+    <button aria-label="Go to slide {{ loop.index }}"{% if loop.first %} class="is-active"{% endif %}></button>
+    {% endfor %}
+  </div>
+</section>

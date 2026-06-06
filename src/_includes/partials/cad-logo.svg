@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 436 82" role="img" aria-label="Control Alt Delete — Managed IT Services" preserveAspectRatio="xMidYMid meet">
+  <title>Control Alt Delete — Managed IT Services</title>
+  <desc>Official wordmark. Braces are always cherry #D72638; the headline and tagline use currentColor so text recolors via CSS (ink on light, #F5F5F7 on charcoal). Tagline at 60% opacity.</desc>
+
+  <!-- Left brace — always cherry -->
+  <path d="M 32,6
+           C 18,6 14,12 14,22
+           C 14,34 10,40 2,41
+           C 10,42 14,48 14,60
+           C 14,70 18,76 32,76"
+        fill="none"
+        stroke="#D72638"
+        stroke-width="6"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- Right brace — always cherry -->
+  <path d="M 404,6
+           C 418,6 422,12 422,22
+           C 422,34 426,40 434,41
+           C 426,42 422,48 422,60
+           C 422,70 418,76 404,76"
+        fill="none"
+        stroke="#D72638"
+        stroke-width="6"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- Headline -->
+  <text x="218" y="42"
+        text-anchor="middle"
+        fill="currentColor"
+        font-family="'Bricolage Grotesque', 'Space Grotesk', 'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-weight="700"
+        font-size="30"
+        letter-spacing="-0.4">Control Alt Delete</text>
+
+  <!-- Tagline -->
+  <text x="218" y="67"
+        text-anchor="middle"
+        fill="currentColor"
+        opacity="0.6"
+        font-family="'Plus Jakarta Sans', 'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-weight="400"
+        font-size="17"
+        letter-spacing="0.4">Managed IT Services</text>
+</svg>

@@ -12,6 +12,17 @@ layout: "layouts/service.njk"
 
 We help you leverage Azure's scalable computing power and Microsoft 365's collaborative tools to enhance your IT performance, resilience, and agility.
 
+<a class="case-card" href="/projects/cloud-migrations/" markdown="0">
+  <span class="case-card__kicker">Case study</span>
+  <h3>From aging hardware to cloud-first, in phases</h3>
+  <div class="case-card__metrics">
+    <!-- VERIFY: placeholder metrics -->
+    <div class="case-card__metric" data-verify="placeholder"><strong>~30%</strong><span>infra cost reduction</span></div>
+    <div class="case-card__metric" data-verify="placeholder"><strong>0 hrs</strong><span>team downtime</span></div>
+  </div>
+  <p>See how we move BC businesses to the cloud without stopping their work →</p>
+</a>
+
 ## How Much Internal Friction Are You Tolerating Just to Keep Things Running?
 
 If your staff is constantly adjusting to work around outdated systems, chasing files, or submitting tickets for basic requests, you're not just wasting time-you're burning momentum. That operational drag adds up, day after day.
